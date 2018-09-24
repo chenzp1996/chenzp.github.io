@@ -1,0 +1,10 @@
+$(document).ready(function(){
+	$("#f_b_i4_joiner_botton").click(function(){
+		if($("#f_b_i4_joiner").css("display")=="none"){
+			$("#f_b_i4_joiner").css("display","block");
+		}
+		else{
+			$("#f_b_i4_joiner").css("display","none");;
+		}
+	});
+});

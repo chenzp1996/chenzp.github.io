@@ -1,0 +1,134 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+header{
+	background:url(../img/banner.jpg) no-repeat;
+	background-size: cover;
+	padding-top: 20px;
+}
+
+nav{
+	width: 80%;
+	background: rgb(51,51,51);
+	margin: 0 auto;
+	overflow: hidden;
+	opacity: 0.5;
+}
+
+nav ul{
+	float: left;
+}
+
+nav ul li{
+	display: inline;
+	list-style: none;
+	color: yellow;
+	/*line-height: 54px;*/
+}
+
+nav ul li a{
+	text-decoration: none;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	margin: 0 15px;
+	color: white;
+	/*line-height: 50.4px;*/
+	transition: all .3s;
+}
+
+nav ul li:after{
+	content: "/";
+}
+
+nav ul li:first-of-type a{
+	color: yellow;
+	border-top: 4px solid yellow;
+	margin-left: 0px;
+}
+
+nav ul li:last-of-type:after{
+	content: "";
+}
+
+nav ul li a:hover{
+	color: yellow;
+	border-top: 4px solid yellow;
+	
+}
+
+nav form{
+	float: right;
+	margin-right: 20px;
+	line-height: 54px;
+	position: relative;
+}
+
+
+nav form .text{
+	border: 1px solid white;
+	outline: none;
+	background: none;
+	padding: 5px 10px;
+	color: white;
+	font-size: 15px;
+}
+
+nav form .submit{
+	position: absolute;
+	top: 14px;
+	right: 0;
+}
+
+header h1{
+	font-size: 70px;
+	margin: 0 auto;
+	text-align: center;
+	color: white;
+	margin-top: 200px;
+	border-top: 5px solid white;	
+	border-bottom: 5px solid white;
+	width: 20%;
+}
+
+header .card{
+	width: 1000px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+header .card .card1,.card2,.card3,.card4{
+	background: #16A667;
+	margin: 0 15px;
+	float: left;
+	width: 180px;
+	padding: 20px;
+}
+
+header .card img{
+	display: block;
+	margin: 0 auto;
+	padding: 15px;
+	border: 8px solid white;
+	border-radius: 50%;
+	transition: all .3s;
+}
+
+header .card img:hover{
+	transform:rotateY(360deg);
+}
+
+
+
+header .card h2{
+	text-align: center;
+	font-family: "微软雅黑";
+	font-size: 15px;
+}
+
+header .card p{
+	text-align: center;
+	line-height: 25px;
+	font-family: "微软雅黑";
+}

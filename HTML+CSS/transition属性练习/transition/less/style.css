@@ -1,0 +1,208 @@
+body {
+  margin: 0;
+  height: 100vh;
+}
+body h3 {
+  margin: 0;
+}
+body .container {
+  height: 100%;
+  background: url("../img/background.jpg") no-repeat;
+  background-size: 100% 100%;
+  overflow: hidden;
+}
+body .container .circle {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  position: relative;
+  float: left;
+  margin: 20px;
+  transition: all 1s;
+}
+body .container .circle::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border-top: 15px solid #ECAB18;
+  border-left: 15px solid #ECAB18;
+  border-right: 15px solid #1AD280;
+  border-bottom: 15px solid #1AD280;
+  transition: all 1s;
+}
+body .container .circle img {
+  position: absolute;
+  display: block;
+  height: 100%;
+  border-radius: 50%;
+  transition: all 1s;
+}
+body .container .circle .info {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+body .container .circle .info .info-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  margin: 0px auto;
+  text-align: center;
+  opacity: 0;
+  transition: all 1s;
+}
+body .container .circle .info .info-back h2,
+body .container .circle .info .info-back p {
+  margin-top: 80px;
+  color: white;
+}
+body .container .circle1:hover .info > .info-back {
+  opacity: 1;
+}
+body .container .circle1:hover::before {
+  transform: rotate(180deg);
+}
+body .container .circle-before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 15px solid rgba(255, 255, 255, 0.5);
+  transition: all 1s;
+}
+body .container .circle2::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 15px solid rgba(255, 255, 255, 0.5);
+  transition: all 1s;
+}
+body .container .circle2 .info .info-back {
+  transform: translateX(-300px);
+}
+body .container .circle2:hover img {
+  transform: rotate(360deg);
+}
+body .container .circle2:hover .info .info-back {
+  transform: rotate(720deg) translateX(0px);
+  opacity: 1;
+}
+body .container .circle3::before {
+  transform-origin: 0 center;
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 15px solid rgba(255, 255, 255, 0.5);
+  transition: all 1s;
+}
+body .container .circle3 img {
+  transform-origin: 0 center;
+  transform: rotateY(0deg);
+}
+body .container .circle3:hover::before {
+  transform: rotateY(-90deg);
+}
+body .container .circle3:hover img {
+  transform: rotateY(-90deg);
+}
+body .container .circle3:hover .info .info-back {
+  opacity: 1;
+}
+body .container .circle4::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 15px solid rgba(255, 255, 255, 0.5);
+  transition: all 1s;
+}
+body .container .circle4 .info .info-back {
+  transform: translateY(-300px) scale(0.5);
+  background: #ECAB18;
+}
+body .container .circle4:hover::before {
+  transform: translateY(220px) scale(0.5);
+}
+body .container .circle4:hover img {
+  transform: translateY(220px) scale(0.5);
+}
+body .container .circle4:hover .info .info-back {
+  transform: translateX(0px) scale(1);
+  opacity: 1;
+}
+body .container .circle5::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 15px solid rgba(255, 255, 255, 0.5);
+  transition: all 1s;
+  transform-origin: right center;
+}
+body .container .circle5 img {
+  transform-origin: right center;
+}
+body .container .circle5 .info .info-back {
+  background: #ECAB18;
+}
+body .container .circle5:hover::before {
+  transform: rotate(-200deg);
+}
+body .container .circle5:hover img {
+  transform: rotate(-200deg);
+}
+body .container .circle5:hover .info .info-back {
+  opacity: 1;
+}
+body .container .circle6 {
+  float: right;
+  margin-right: 200px;
+}
+body .container .circle6::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 15px solid rgba(255, 255, 255, 0.5);
+  transition: all 1s;
+}
+body .container .circle6 .info .info-back {
+  transform: rotateY(90deg);
+}
+body .container .circle6:hover .info .info-back {
+  transform: rotateY(0deg);
+  opacity: 1;
+}

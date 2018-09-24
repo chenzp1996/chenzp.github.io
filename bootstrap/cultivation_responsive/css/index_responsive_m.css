@@ -1,0 +1,319 @@
+@media only screen and (min-width: 768px){
+	
+	.col-m-1{width: 8.33%;}
+	.col-m-2{width: 16.66%;}
+	.col-m-3{width: 25%;}
+	.col-m-4{width: 33.33%;}
+	.col-m-5{width: 41.66%;}
+	.col-m-6{width: 50%;}
+	.col-m-7{width:58.33%;}
+	.col-m-8{width: 66.66%;}
+	.col-m-9{width: 75%;}
+	.col-m-10{width: 83.33%;}
+	.col-m-11{width: 91.66%;}
+	.col-m-12{width: 100%;}
+
+/*--------------------------------------*/	
+	.banner{
+		min-height: 375px;
+		background: url(../img/banner.jpg) no-repeat;
+		background-size: auto 100%;
+		padding-top: 20px;
+		padding-bottom: 0px;
+	}	
+
+	.clearfix{
+		min-height: 60px;
+		background: rgba(51,51,51,0.5);
+		margin: 0 auto;	
+	}
+
+	
+	
+	.nav_log{
+		display: none;
+	}
+
+	.clearfix .menu{
+		position: none;
+		float: left;
+		width: auto;
+		background: none;
+		margin-left: 20px;
+		display: block;
+	}
+
+	.clearfix .menu li{
+		float: left;
+		list-style: none;
+		color: yellow;
+		margin: 0;
+		padding: 0;
+		
+	}
+	.clearfix ul li:first-of-type{
+		border-top: none;
+	}
+
+	.clearfix .menu li:after{
+		content: "/";
+	}
+
+	.clearfix .menu li a{
+		text-decoration: none;
+		font-family:'Open Sans', sans-serif;
+		font-size: 15.4px;
+		color: white;
+		margin:0 10px;
+	}
+
+	.clearfix .menu li:first-of-type a{
+		color: yellow;
+		border-top: 4px solid #FAEE0D;
+		margin: 0;
+	}
+
+	.clearfix .menu li a:hover{
+		color: #FAEE0D;
+		border-top: 4px solid #FAEE0D;
+	}
+	.clearfix .menu li:last-of-type:after{
+		content: "";
+	}
+/*--------------------------------------------*/
+	.clearfix form{
+		position: relative;
+		display: block;
+		float: right;
+		width: 20%;
+		margin-right: 20px;
+/*		line-height: 60px;*/
+	}
+
+	.clearfix form .search{
+		width: 80%;
+		background: none;
+		border: 1px solid white;
+		outline: none;
+		font-family: "微软雅黑";
+		font-size: 15px;
+		padding: 5px 10px;
+		color: white;
+		
+	}
+
+	.clearfix form .submit{
+		position: absolute;
+		background:url(../img/search.png) no-repeat center;
+		width: 22px;
+		height: 22px;
+		right: 5px;
+		top: 5px;
+		border: none;
+		outline: none;
+		cursor: pointer;
+	}
+/*--------------------------------------*/	
+	.banner .title{	
+	display: block;
+	border-top: 5px solid white;
+	border-bottom: 5px solid white;
+	margin: 2em auto 0;
+	line-height:60px;
+	font-size: 3em;
+	font-weight: bold;
+	text-decoration: none;
+	color: white;
+	font-family: "RexBoldInline", '宋体';
+	/*animation: titleMove 1s;*/
+	}
+
+	@font-face
+	{
+		font-family: RexBoldInline;
+		src: url(../img/RexBoldInline.otf);
+	}
+
+/*-------------------------------------*/	
+.banner .grids{
+	position: relative;
+	top: 100px;
+	margin: 0 auto;
+	overflow: hidden;
+	
+}
+
+.banner .grids .gridsImg{
+	background-color: #16A667;
+	width: 23%;
+	float: left;
+	box-sizing: border-box;
+	margin-left: 0;
+	margin: 0 1%;
+}
+
+
+/*.grids .gridsImg:nth-of-type(2),.grids .gridsImg:nth-of-type(4){
+	float: right;
+}*/
+
+
+.banner .grids .gridsImg img{
+	display: block;
+	margin: 10px auto;
+	border: 5px solid white;
+	border-radius: 50%;
+	padding: 5px;
+	transition: all .3s;
+}
+
+.banner .grids .gridsImg img:hover{
+	transform: rotateY(360deg);
+}
+
+.banner .grids .gridsImg h2{
+	font-size: 0.9em;
+	font-family: "微软雅黑";
+	text-align: center;
+	margin-bottom: 5px;
+	color: white;
+	font-weight: bold;
+}
+
+.banner .grids .gridsImg p{
+	/*padding: 0 20px;*/
+	text-align: center;
+	font-family: "微软雅黑";
+	color: white;
+	font-size: 0.9em;
+}
+/*----------------------------*/
+
+.work_clearBox{
+	padding: 30px;
+	overflow: hidden;
+}
+
+
+.about_section h1{
+	/*width: 80%;*/
+	margin: 0;
+	margin:120px 0 30px;
+	font-size: 1.5em;
+	text-align: left;
+}
+
+.about_section_img{
+	display: block;
+	float: left;
+}
+
+.about_section .p1,.p2{
+	font-size: 0.8em;
+	float: left;
+}
+/*-----------------------------------*/
+	.service_section{
+		overflow: hidden;
+		padding:0 20px;
+	}
+	
+	.service_section h1{
+		width: 90%;
+		margin-top: 40px;
+		font-size: 1.5em;
+		text-align: left;
+	}
+	
+	.service_grids .grids{
+		float: left;
+	}
+
+/*----------work_section  start---------------*/
+
+	.work_section h1{	
+		margin: 40px 0 20px;
+		font-size: 1.5em;
+		text-align: left;
+	}
+	.work_section .textBox{
+		padding: 26% 33%;
+	}
+	
+/*------------news_section start---------------*/
+	.news_section h1{
+		margin: 0;
+		margin:50px 0 30px;
+		font-size: 1.5em;
+		text-align: left;
+	}
+	
+	.news_section{
+		padding:0 20px;
+	}
+	
+	.news_section_img{
+		display: inline-block;
+		
+	}
+	
+	.news_section span{
+		width: 30%;
+		display: block;
+		float: left;
+		margin: 0 1.6%;
+		text-align: left;
+	}
+	
+	.news_section span .title{
+		font-size: 1em;
+		font-weight: bold;
+	}
+	
+		
+	.news_section span h3,p{
+		font-size: 0.9em;
+		
+	}
+	
+	.news_section span p{
+		font-size: 0.9em;
+	}
+	/*------------------------*/
+
+/*---------categories_section start-----------------*/
+	
+	.categories_section{
+		background: #3F454D;	
+	}
+	
+	.categories_section .container{
+		margin: 0 auto;
+		padding-top: 20px;
+		overflow: hidden;
+	}
+	
+	.categories_section .container .cateBox{
+		float: left;
+		margin:0;
+	}
+	
+	
+
+/*---------categories_section finish-----------------*/
+.footer_section{
+	padding: 10px 0;
+}
+.footer_section .container .social_icons .icon{
+	margin: 10px;
+}
+
+.footer_section .container .bottom_menu a{
+	font-size: 16px;
+	padding: 0 20px;
+}
+
+.footer_section .container p{
+	font-size: 20px;
+}
+}

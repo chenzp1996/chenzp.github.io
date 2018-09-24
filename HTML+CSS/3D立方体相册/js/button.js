@@ -1,0 +1,23 @@
+$(document).ready(function(){
+    $(".button0").click(function(){
+        $(".container-album").css("transform","translateZ(-150px) rotateY(-15deg) rotateX(-15deg)");
+    });
+    $(".button1").click(function(){
+        $(".container-album").css("transform","none");
+    });
+    $(".button2").click(function(){
+        $(".container-album").css("transform","rotateX(-180deg)");
+    });
+    $(".button3").click(function(){
+        $(".container-album").css("transform","rotateX(-90deg)");
+    });
+    $(".button4").click(function(){
+        $(".container-album").css("transform","rotateX(90deg)");
+    });
+    $(".button5").click(function(){
+        $(".container-album").css("transform","rotateY(90deg)");
+    });
+    $(".button6").click(function(){
+        $(".container-album").css("transform","rotateY(-90deg)");
+    });
+});

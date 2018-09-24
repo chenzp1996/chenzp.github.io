@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>滑动相册</title>
+	<link rel="stylesheet" href="./css/slideAlbum.css">
+</head>
+<body>
+	<h1>轮播图</h1>
+	<!-- 外围最大div -->
+	<div id="playImages">
+		<!-- 大图区div -->
+		<div class="bigPic">
+						
+			<ul class="bigUl">
+				<!-- 左右按钮 -->
+				<div class="prev"></div>
+				<div class="next"></div>
+				<!-- 将大图区分为左右两个区 -->
+				<div class="mark_left"></div>
+				<div class="mark_right"></div>
+
+				<!-- 设置第一张图优先级为1，其他未默认0 -->
+				<li style="z-index: 1"><img src="imges/1.jpg" alt=""></li>
+				<li><img src="imges/2.jpg" alt=""></li>
+				<li><img src="imges/3.jpg" alt=""></li>
+				<li><img src="imges/4.jpg" alt=""></li>
+				<li><img src="imges/5.jpg" alt=""></li> 
+				<li><img src="imges/6.jpg" alt=""></li>
+			</ul>
+		</div>
+
+		<div class="smallPic">
+			<ul class="smallUl">
+				<li><img src="imges/1.jpg" alt=""></li>
+				<li><img src="imges/2.jpg" alt=""></li>
+				<li><img src="imges/3.jpg" alt=""></li>
+				<li><img src="imges/4.jpg" alt=""></li>
+				<li><img src="imges/5.jpg" alt=""></li> 
+				<li><img src="imges/6.jpg" alt=""></li>
+			</ul>
+		</div> 
+	</div>
+
+	<script src="./js/slideAlbum.js"></script>
+	<script src="./js/perfectMove.js"></script>
+</body>
+</html>

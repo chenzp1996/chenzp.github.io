@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+}
+
+.turntable-bg{
+    width: 650px;
+    height: 600px;
+    background: url("../images/turntable-bg.jpg") no-repeat;
+    background-size: 100% auto;
+    margin: 50px auto;
+    position: relative;
+}
+
+.turntable{
+    width: 450px;
+    height: 450px;
+    background: url("../images/turntable.png") no-repeat;
+    position: absolute;
+    top: 60px;
+    left: 118px;
+    transition: all 3s;
+}
+
+.pointer{
+    width: 174px;
+    height: 228px;
+    background: url("../images/pointer.png") no-repeat;
+    position: absolute;
+    top: 160px;
+    left: 260px;
+}

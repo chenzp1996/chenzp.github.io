@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+.background {
+  width: 100%;
+  height: 100%;
+  background: url(../images/background.jpg) no-repeat;
+  background-size: cover;
+  position: relative;
+  perspective: 1500px;
+  /*-------------立方相册区开始------------*/
+  /*----------------按钮区开始-------------*/
+}
+.background .container-album {
+  position: absolute;
+  top: 200px;
+  left: 0;
+  right: 0;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  transition: all .8s;
+  transform-style: preserve-3d;
+  transform: translateZ(-150px) rotateY(-15deg) rotateX(-15deg);
+}
+.background .container-album .side {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  border: 2px solid #000;
+  opacity: 0.9;
+}
+.background .container-album .side1 {
+  background: url('../images/1.jpg') no-repeat;
+  background-size: 100% auto;
+}
+.background .container-album .side2 {
+  background: url('../images/2.jpg') no-repeat;
+  background-size: 100% auto;
+}
+.background .container-album .side3 {
+  background: url('../images/3.jpg') no-repeat;
+  background-size: 100% auto;
+}
+.background .container-album .side4 {
+  background: url('../images/4.jpg') no-repeat;
+  background-size: 100% auto;
+}
+.background .container-album .side5 {
+  background: url('../images/5.jpg') no-repeat;
+  background-size: 100% auto;
+}
+.background .container-album .side6 {
+  background: url('../images/6.jpg') no-repeat;
+  background-size: 100% auto;
+}
+.background .container-album .side-top {
+  transform: rotateX(90deg) translateZ(150px);
+}
+.background .container-album .side-bottom {
+  transform: rotateX(-90deg) translateZ(150px);
+}
+.background .container-album .side-front {
+  transform: translateZ(150px);
+}
+.background .container-album .side-back {
+  transform: translateZ(-150px) rotateZ(180deg);
+}
+.background .container-album .side-left {
+  transform: translateX(-150px) rotateY(90deg);
+}
+.background .container-album .side-right {
+  transform: translateX(150px) rotateY(-90deg);
+}
+.background .container-botton {
+  width: 80%;
+  height: 10%;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.background .container-botton label {
+  display: block;
+  float: left;
+  width: 14.28%;
+  text-align: center;
+}
+.background .container-botton label input {
+  display: none;
+}
+.background .container-botton label input:checked + .button {
+  background: #12695E;
+  color: #EEE;
+}
+.background .container-botton label .button {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  border: 2px solid black;
+  padding: 5px;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background: #00D1B2;
+  border-radius: 10px;
+  opacity: .6;
+}
+.background .container-botton label .button:hover {
+  background: #85C2EC;
+}

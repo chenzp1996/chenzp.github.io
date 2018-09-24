@@ -1,0 +1,281 @@
+.container {
+  width: 750px;
+  height: 400px;
+  position: relative;
+  margin: 100px auto;
+}
+.container .tiler {
+  width: 250px;
+  height: 200px;
+  float: left;
+}
+.container .tiler img {
+  width: 250px;
+  height: 200px;
+}
+.container .tiler .view1 .part1 {
+  background: url("../images/1.png") no-repeat;
+  background-size: 1000px 750px;
+}
+.container .tiler .view1 .part2 {
+  background: url("../images/1.png") no-repeat;
+  background-size: 1000px 750px;
+}
+.container .tiler .view1 .part3 {
+  background: url("../images/1.png") no-repeat;
+  background-size: 1000px 750px;
+}
+.container .tiler .view1 .part4 {
+  background: url("../images/1.png") no-repeat;
+  background-size: 1000px 750px;
+}
+.container .tiler .view1 .part5 {
+  background: url("../images/1.png") no-repeat;
+  background-size: 1000px 750px;
+}
+.container .tiler .view1 .part6 {
+  background: url("../images/1.png") no-repeat;
+  background-size: 1000px 750px;
+}
+.container .tiler .view1 .part7 {
+  background: url("../images/1.png") no-repeat;
+  background-size: 1000px 750px;
+}
+.container .tiler .view1 .part8 {
+  background: url("../images/1.png") no-repeat;
+  background-size: 1000px 750px;
+}
+.container .tiler .view1 .part9 {
+  background: url("../images/1.png") no-repeat;
+  background-size: 1000px 750px;
+}
+.container .tiler .view2 .part1 {
+  background: url("../images/2.png") no-repeat;
+  background-size: 1000px 750px;
+}
+.container .tiler .view2 .part2 {
+  background: url("../images/2.png") no-repeat;
+  background-size: 1000px 750px;
+}
+.container .tiler .view2 .part3 {
+  background: url("../images/2.png") no-repeat;
+  background-size: 1000px 750px;
+}
+.container .tiler .view2 .part4 {
+  background: url("../images/2.png") no-repeat;
+  background-size: 1000px 750px;
+}
+.container .tiler .view2 .part5 {
+  background: url("../images/2.png") no-repeat;
+  background-size: 1000px 750px;
+}
+.container .tiler .view2 .part6 {
+  background: url("../images/2.png") no-repeat;
+  background-size: 1000px 750px;
+}
+.container .tiler .view2 .part7 {
+  background: url("../images/2.png") no-repeat;
+  background-size: 1000px 750px;
+}
+.container .tiler .view2 .part8 {
+  background: url("../images/2.png") no-repeat;
+  background-size: 1000px 750px;
+}
+.container .tiler .view2 .part9 {
+  background: url("../images/2.png") no-repeat;
+  background-size: 1000px 750px;
+}
+.container .tiler .view3 .part1 {
+  background: url("../images/3.png") no-repeat;
+  background-size: 1000px 750px;
+}
+.container .tiler .view3 .part2 {
+  background: url("../images/3.png") no-repeat;
+  background-size: 1000px 750px;
+}
+.container .tiler .view3 .part3 {
+  background: url("../images/3.png") no-repeat;
+  background-size: 1000px 750px;
+}
+.container .tiler .view3 .part4 {
+  background: url("../images/3.png") no-repeat;
+  background-size: 1000px 750px;
+}
+.container .tiler .view3 .part5 {
+  background: url("../images/3.png") no-repeat;
+  background-size: 1000px 750px;
+}
+.container .tiler .view3 .part6 {
+  background: url("../images/3.png") no-repeat;
+  background-size: 1000px 750px;
+}
+.container .tiler .view3 .part7 {
+  background: url("../images/3.png") no-repeat;
+  background-size: 1000px 750px;
+}
+.container .tiler .view3 .part8 {
+  background: url("../images/3.png") no-repeat;
+  background-size: 1000px 750px;
+}
+.container .tiler .view3 .part9 {
+  background: url("../images/3.png") no-repeat;
+  background-size: 1000px 750px;
+}
+.container .tiler .view4 .part1 {
+  background: url("../images/4.png") no-repeat;
+  background-size: 1000px 750px;
+}
+.container .tiler .view4 .part2 {
+  background: url("../images/4.png") no-repeat;
+  background-size: 1000px 750px;
+}
+.container .tiler .view4 .part3 {
+  background: url("../images/4.png") no-repeat;
+  background-size: 1000px 750px;
+}
+.container .tiler .view4 .part4 {
+  background: url("../images/4.png") no-repeat;
+  background-size: 1000px 750px;
+}
+.container .tiler .view4 .part5 {
+  background: url("../images/4.png") no-repeat;
+  background-size: 1000px 750px;
+}
+.container .tiler .view4 .part6 {
+  background: url("../images/4.png") no-repeat;
+  background-size: 1000px 750px;
+}
+.container .tiler .view4 .part7 {
+  background: url("../images/4.png") no-repeat;
+  background-size: 1000px 750px;
+}
+.container .tiler .view4 .part8 {
+  background: url("../images/4.png") no-repeat;
+  background-size: 1000px 750px;
+}
+.container .tiler .view4 .part9 {
+  background: url("../images/4.png") no-repeat;
+  background-size: 1000px 750px;
+}
+.container .tiler .view5 .part1 {
+  background: url("../images/5.png") no-repeat;
+  background-size: 1000px 750px;
+}
+.container .tiler .view5 .part2 {
+  background: url("../images/5.png") no-repeat;
+  background-size: 1000px 750px;
+}
+.container .tiler .view5 .part3 {
+  background: url("../images/5.png") no-repeat;
+  background-size: 1000px 750px;
+}
+.container .tiler .view5 .part4 {
+  background: url("../images/5.png") no-repeat;
+  background-size: 1000px 750px;
+}
+.container .tiler .view5 .part5 {
+  background: url("../images/5.png") no-repeat;
+  background-size: 1000px 750px;
+}
+.container .tiler .view5 .part6 {
+  background: url("../images/5.png") no-repeat;
+  background-size: 1000px 750px;
+}
+.container .tiler .view5 .part7 {
+  background: url("../images/5.png") no-repeat;
+  background-size: 1000px 750px;
+}
+.container .tiler .view5 .part8 {
+  background: url("../images/5.png") no-repeat;
+  background-size: 1000px 750px;
+}
+.container .tiler .view5 .part9 {
+  background: url("../images/5.png") no-repeat;
+  background-size: 1000px 750px;
+}
+.container .tiler .view6 .part1 {
+  background: url("../images/6.png") no-repeat;
+  background-size: 1000px 750px;
+}
+.container .tiler .view6 .part2 {
+  background: url("../images/6.png") no-repeat;
+  background-size: 1000px 750px;
+}
+.container .tiler .view6 .part3 {
+  background: url("../images/6.png") no-repeat;
+  background-size: 1000px 750px;
+}
+.container .tiler .view6 .part4 {
+  background: url("../images/6.png") no-repeat;
+  background-size: 1000px 750px;
+}
+.container .tiler .view6 .part5 {
+  background: url("../images/6.png") no-repeat;
+  background-size: 1000px 750px;
+}
+.container .tiler .view6 .part6 {
+  background: url("../images/6.png") no-repeat;
+  background-size: 1000px 750px;
+}
+.container .tiler .view6 .part7 {
+  background: url("../images/6.png") no-repeat;
+  background-size: 1000px 750px;
+}
+.container .tiler .view6 .part8 {
+  background: url("../images/6.png") no-repeat;
+  background-size: 1000px 750px;
+}
+.container .tiler .view6 .part9 {
+  background: url("../images/6.png") no-repeat;
+  background-size: 1000px 750px;
+}
+.container .tiler .view {
+  width: 1000px;
+  height: 600px;
+  position: absolute;
+  top: -50px;
+  left: -125px;
+}
+.container .tiler .view span:nth-of-type(odd) {
+  transition: all .5s;
+}
+.container .tiler .view span:nth-of-type(even) {
+  transition: all .7s;
+}
+.container .tiler .view span[class^="part"] {
+  transform-style: preserve-3d;
+  transition-timing-function: cubic-bezier(0.65, 0.01, 0.15, 1.33);
+  opacity: 0;
+  transform: scale(0);
+  display: block;
+  float: left;
+  width: 33.3333333%;
+  height: 33.3333333%;
+}
+.container .tiler .view .part1 {
+  background-position: left -76px;
+}
+.container .tiler .view .part2 {
+  background-position: center -76px;
+}
+.container .tiler .view .part3 {
+  background-position: right -76px;
+}
+.container .tiler .view .part4 {
+  background-position: left center;
+}
+.container .tiler .view .part5 {
+  background-position: center;
+}
+.container .tiler .view .part6 {
+  background-position: right center;
+}
+.container .tiler .view .part7 {
+  background-position: left -476px;
+}
+.container .tiler .view .part8 {
+  background-position: center -476px;
+}
+.container .tiler .view .part9 {
+  background-position: right -476px;
+}

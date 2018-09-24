@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>太阳系</title>
+</head>
+<body>
+	<canvas id="canvas" width="1000" height="1000" style="background:#000;display: block;margin: 50px auto;">Your browser does not support the canvas element.</canvas>
+
+	<script>
+		var cxt=document.getElementById("canvas").getContext("2d");
+
+		//画轨道
+		function drawTrack(){
+			for(var i=1;i<9;i++){
+			cxt.lineWidth=2;
+			cxt.strokeStyle="#FFF";
+
+			cxt.beginPath();
+			//画轨迹圆
+			cxt.arc(500,500,i*50,0,360,false);
+			cxt.closePath();
+			cxt.stroke();
+			}
+		}
+		drawTrack();
+
+		var time=0;
+		//画星球
+		function drawStar(x,y,cycle,color1,color2){
+
+			
+			cxt.save();
+
+			cxt.translate(500,500);
+			//星球转动
+			cxt.rotate(time*(360/cycle)*Math.PI/180);
+			//画星球圆
+			cxt.beginPath();			
+			cxt.arc(x,y,20,0,360,false);
+			cxt.closePath();
+			//星球径向渐变
+			var starColor=cxt.createRadialGradient(x,y,0,x,y,20);
+			starColor.addColorStop(0,color1);
+			starColor.addColorStop(1,color2);
+			cxt.fillStyle=starColor;
+			cxt.fill();
+			cxt.restore();
+			time+=1;
+
+
+		}
+
+
+		//
+		function move(){
+			//每次启动定时器先清除画布
+			cxt.clearRect(0,0,1000,1000);
+			//每次先画轨道
+			drawTrack();
+
+			drawStar(0,0,0,"red","yellow");
+			drawStar(0,-50,87.7,"#A69697","#5C3E40");
+			drawStar(0,-100,224.701,"#C4BBAC","#1F1315");
+			drawStar(0,-150,365,"#78B1E8","#050C12");
+			drawStar(0,-200,686.98,"#CEC9B6","#76422D");
+			drawStar(0,-250,4332.589,"#C0A48E","#322222");
+			drawStar(0,-300,10759.5,"#F7F9E3","#5C4533");
+			drawStar(0,-350,30799.095,"#A7E1E5","#19243A");
+			drawStar(0,-400,164.8*365,"#0661B2","#1E3B73");
+			
+
+		}
+	
+		setInterval(move,100);
+
+	</script>
+</body>
+</html>
