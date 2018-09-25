@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <title>仿window10推送消息</title>
+</head>
+
+<body>
+    <button class="btn1" value="message01">message01</button>
+
+    <div class="container">
+    </div>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .btn {
+            width: 100px;
+            height: 50px;
+            padding: 20px;
+        }
+
+        .message {
+            width: 200px;
+            height: 100px;
+            background: yellow;
+            position: absolute;
+            right: -200px;
+        }
+
+        .portrait {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: lightcoral;
+            border-radius: 50%;
+            margin: 10px;
+        }
+
+        .message h4 {
+            margin: 0;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .message p {
+            text-align: center;
+            margin: 0;
+        }
+    </style>
+    <script>
+        //添加消息对象
+        var message01 = function (portraitSrc, username, title, content) {
+            this.portraitSrc = portraitSrc;
+            this.username = username;
+            this.title = title;
+            this.content = content;
+        }
+        //实例化一个对象
+        var m1 = new message01("./portrait1.png","buuuuuuuger","sayHello","Hello!My name is buuuuuuuuger!");
+        
+        $(".btn1").click(function () {
+            createMessage(m1);
+        });
+
+        function createMessage(obj) {
+            $(".container").append("<div class = 'message'>" + '<img class="portrait" src="' + obj.portraitSrc + '"></img>' +
+                '<h4>'+obj.title+'</h4>' + '<p>' + obj.content +'</p>' + "</div>");
+            $(".container div").each(function (index, value) {
+                $(this).css({
+                    "bottom": ($(".message").height() + 10) * index + 10,
+                });
+                $(this).animate({
+                    right: "0"
+                });
+
+                var _this = $(this);
+                setTimeout(function () {
+                    _this.animate({
+                        right: "-200"
+                    }, function () {
+                        _this.nextAll().animate({
+                            bottom: "-=" + ($(".message").height() + 10)
+                        });
+                        _this.remove();
+                    });
+                }, 10000);
+            });
+        }
+    </script>
+</body>
+
+</html>
