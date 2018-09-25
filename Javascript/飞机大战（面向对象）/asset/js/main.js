@@ -2,14 +2,15 @@
 var contentDiv = document.getElementById('content');
 var startDiv = document.getElementById('start');
 var mainDiv = document.getElementById('main');
-var scoreDiv = document.getElementById('score');
+var scoreDiv = document.getElementById('current-score');
 var suspendDiv = document.getElementById('suspend');
 var continueDiv = document.getElementById('continue');
 var settlementDIV = document.getElementById('settlement');
+var bestScore = document.getElementById("best-score");
 
-var score = 0;
+var score = 0;//得分
 // 获取游戏界面宽高度
-var contentClass = contentDiv.currentStyle? contentDiv.currentStyle: window.getComputedStyle(contentDiv, null);
+var contentClass = contentDiv.currentStyle ? contentDiv.currentStyle: window.getComputedStyle(contentDiv, null);
 var stageSizeX = parseInt(contentClass.width);
 var stageSizeY = parseInt(contentClass.height);
 
@@ -19,8 +20,8 @@ var enemyPlaneS = {
     height: 24,
     imgSrc: './asset/images/enemy-plane-s.png',
     boomSrc: './asset/images/enemy-plane-s-boom.gif',
-    boomTime: 100,
-    hp: 1
+    boomTime: 100,//过100后爆炸
+    hp: 1//生命值
 };
 
 var enemyPlaneM = {
@@ -51,6 +52,7 @@ var ourPlaneX = {
     boomTime: 100,
     hp: 1
 };
+//子弹对象
 var bulletX = {
     width: 6,
     height: 14,
@@ -70,14 +72,13 @@ var Plane = function (centerX, centerY, planeModel, speed) {
     this.hp = planeModel.hp; 
     this.speed = speed;
     
-    //定位点
+    //定位位置
     this.currentX = this.centerX -this.sizeX/2;
     this.currentY = this.centerY -this.sizeY/2;
 }
 
-// 画出一个飞机的方法
+// 画出飞机的方法
 Plane.prototype.draw = function () {
-	// this.imgNode = document.createElement('img');
 	this.imgNode = new Image();
 	this.imgNode.src = this.imgSrc;
 	this.imgNode.style.top = this.centerY -this.sizeY/2 + 'px';
@@ -154,7 +155,7 @@ Enemy.prototype.moveAllEnemy = function () {
 				if (checkBulletCollision) {
 					// 飞机挨打
 					score++;
-					scoreDiv.innerHTML = score;
+					scoreDiv.innerHTML ="当前得分:" + score;
 					this.segments[i].imgNode.src = this.segments[i].hitSrc ? this.segments[i].hitSrc : this.segments[i].boomSrc;
 					this.segments[i].hp--;
 					
@@ -285,7 +286,8 @@ var gameOver = function () {
 	ourPlane.imgNode.src = ourPlane.boomSrc;
 	clearInterval(timeID);
 	settlementDIV.style.display = 'block';
-	document.querySelector('p#final-score').innerText = score;
+	checkCookie();
+	document.querySelector('p#final-score').innerText ="本次得分:" + score;
 }
 
 var time = 0;
@@ -325,11 +327,52 @@ var restart = function () {
 }
 
 continueDiv.onclick = function (ev) {
-	ev.stopPropagation();
+	ev.stopPropagation();//阻止事件冒泡
 	start();
 };
 
 mainDiv.onclick = function () {
 	clearTimeout(timeID);
 	suspendDiv.style.display = 'block';
+}
+
+/*cookie操作历史记录*/
+//设置cookie
+function setCookie(cname,cvalue,exdays){
+	var d = new Date();
+	d.setTime(d.getTime()+(exdays*24*60*60*1000));
+	var expires = "expires=" + d.toGMTString();//根据格林威治时间 (GMT) 把 Date 对象转换为字符串
+	document.cookie = cname + "=" + cvalue + ";" + expires;
+}
+
+//获取cookie
+function getCookie(cname){
+	var name = cname + "=";
+	//把当前cookie值分割成数组
+	var cArray = document.cookie.split(";");
+	for(var i = 0;i < cArray.length;i++){
+		var c = cArray[i].trim();
+		if(c.indexOf(name) === 0){
+			//从当前cname位置开始截取字符串
+			return c.substring(name.length,c.length);
+		}
+	}
+	return "";//没找到则返回
+}
+
+//检测cookie
+function checkCookie(){
+	var s = getCookie("score");
+	//如果当前的值比cookie的值大则代替
+	if(s !== ""){
+		if(score > s){
+			setCookie("score",score,30);
+			bestScore.innerHTML = "历史最高:" + score;
+		}else{
+			bestScore.innerHTML = "历史最高:" + s;
+		}
+	}else{
+		setCookie("score",score,30);
+		bestScore.innerHTML = "历史最高:" + score;
+	}
 }
