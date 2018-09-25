@@ -11,6 +11,7 @@
     + [炉石传说首页](https://chenzp1996.github.io/HTML+CSS/%E7%82%89%E7%9F%B3%E4%BC%A0%E8%AF%B4%E9%A6%96%E9%A1%B5/index.html)
 2. Jacascript
     + [轮播图](https://chenzp1996.github.io/Javascript/slideshow%E8%BD%AE%E6%92%AD%E5%9B%BE/slideAlbum.html)
+    + [数字时钟](https://chenzp1996.github.io/Javascript/%E6%95%B0%E7%A0%81%E6%97%B6%E9%92%9F/digital_clock.html)
     + [藏宝图游戏](https://chenzp1996.github.io/Javascript/treasureMap%E8%97%8F%E5%AE%9D%E5%9B%BE%E6%B8%B8%E6%88%8F/treasureMap.html)
     + [抽奖大转盘](https://chenzp1996.github.io/Javascript/%E6%8A%BD%E5%A5%96-%E5%A4%A7%E8%BD%AC%E7%9B%98/lottery.html)
     + [无缝滚动广告](https://chenzp1996.github.io/Javascript/%E6%97%A0%E7%BC%9D%E6%BB%9A%E5%8A%A8/wufenghuadong.html)
