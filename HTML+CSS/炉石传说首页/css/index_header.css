@@ -311,7 +311,8 @@ input::-webkit-input-placeholder {
 /*-----------Nav导航条游戏点击后下拉框-----------*/
 
 .Navbar-items{
-	position: relative;
+	position: absolute;
+	left: 200px;
 	z-index: 9;
 }
 .Navbar-profileItems{
@@ -320,14 +321,15 @@ input::-webkit-input-placeholder {
 }
 
 .Navbar_gamePublishers{	
-	width:1518px;
+	width:100%;
 	height: 250px;
 	z-index: 10;
 	position: absolute;
 	/* top: 0px;
 	left: 0px; */
 	border: 1px solid #434B57;	
-	margin-left: -145px;
+	box-sizing: border-box;
+	margin-left: -53px;
 	margin-top: 40px;
 	background: radial-gradient(ellipse farthest-side at center top,#283244 0,rgba(21,26,35,.95)100%);	
 	visibility: hidden;
@@ -429,12 +431,13 @@ input::-webkit-input-placeholder {
 /*---------Nav导航条电子竞技点击后下拉框---------*/
 	
 .Navbar_modalContent{
-	width:1518px;
+	width:100%;
 	height: 330px;
 	z-index: 1000;
 	position: absolute;
 	border: 1px solid #434B57;
-	margin-left: -145px;
+	box-sizing: border-box;
+	margin-left: -53px;
 	margin-top: 40px;
 	background: radial-gradient(ellipse farthest-side at center top,#283244 0,rgba(21,26,35,.95)100%);	
 	visibility: hidden;
@@ -561,19 +564,19 @@ input::-webkit-input-placeholder {
 	z-index: 1000;
 	position: absolute;
 	border: 1px solid #434B57;
-	margin-left: 1030px;
+	/* margin-left: 1030px; */
 	margin-top: 40px;
 	background: #191D28;
 	opacity: 0;
 	visibility: hidden;	
 	overflow: hidden;
-	right:-800px;
+	/* right:-800px; */
 	transition: all .3s; 
 }
 .userReg_move{
 	visibility: visible;
 	opacity: 1;
-	right: -1020px;
+	right: 50px;
 }
 
 .userReg_btn {
