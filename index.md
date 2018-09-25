@@ -22,4 +22,7 @@
     + [js-ajax-瀑布流+bootstrap模态框+上下张切换+滚动加载](https://chenzp1996.github.io/Ajax/js-ajax-%E7%80%91%E5%B8%83%E6%B5%81+bootstrap%E6%A8%A1%E6%80%81%E6%A1%86+%E4%B8%8A%E4%B8%8B%E5%BC%A0%E5%88%87%E6%8D%A2+%E6%BB%9A%E5%8A%A8%E5%8A%A0%E8%BD%BD/index.html)
 5. Bootstrap
     + [cultivation_responsive(改变窗口大小查看效果)](https://chenzp1996.github.io/bootstrap/cultivation_responsive/index_responsive.html)
+6. Canvas
+   + [canvas画八大行星](https://chenzp1996.github.io/canvas/canvas%E7%94%BB%E5%85%AB%E5%A4%A7%E8%A1%8C%E6%98%9F/sun.html)
+   + [canvas画时钟](https://chenzp1996.github.io/canvas/canvas%E7%94%BB%E6%97%B6%E9%92%9F/clock.html)
 
