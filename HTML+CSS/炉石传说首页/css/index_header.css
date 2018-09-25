@@ -320,10 +320,12 @@ input::-webkit-input-placeholder {
 }
 
 .Navbar_gamePublishers{	
-	width:1516px;
+	width:1518px;
 	height: 250px;
 	z-index: 10;
 	position: absolute;
+	/* top: 0px;
+	left: 0px; */
 	border: 1px solid #434B57;	
 	margin-left: -145px;
 	margin-top: 40px;
@@ -427,7 +429,7 @@ input::-webkit-input-placeholder {
 /*---------Nav导航条电子竞技点击后下拉框---------*/
 	
 .Navbar_modalContent{
-	width:1516px;
+	width:1518px;
 	height: 330px;
 	z-index: 1000;
 	position: absolute;
