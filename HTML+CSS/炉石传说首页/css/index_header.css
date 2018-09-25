@@ -7,6 +7,9 @@
 	z-index: 9000;
 }*/
 
+body{
+	/* overflow: hidden; */
+}
 li{
 	list-style: none;
 }
@@ -112,7 +115,7 @@ li{
 	height: 100%;
 	background-attachment: fixed;
 	width: 100%;
-	height: 3200px;
+	/* height: 3200px; */
 }
 
 /*--------header logo区域--------*/
@@ -186,7 +189,6 @@ input::-webkit-input-placeholder {
 	background: url(../img/nav_bg-1.jpg) no-repeat 76px 0px;
 	height: 52px;
 	margin-bottom: 0px;
-	/*position: fixed;*/
 }
 
 .clearFix li{
@@ -370,7 +372,7 @@ input::-webkit-input-placeholder {
 	width: 100%;
 	top: -40px;
 	left: 0;
-	height: 480vh;
+	height: 3500px;
 	background: rgba(0,0,0,.7);
 	z-index: -1;
 	opacity: 0;
