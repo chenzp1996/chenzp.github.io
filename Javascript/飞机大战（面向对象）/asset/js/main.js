@@ -371,8 +371,9 @@ function checkCookie(){
 			//将最高分保存在localStorage中
 			localStorage.setItem("score",score);
 		}else{
-			setCookie("score",s,30) + score;
-			localStorage.setItem("score",score);
+			// setCookie("score",s,30);
+			bestScore.innerHTML = "历史最高:" + s;
+			// localStorage.setItem("score",score);
 		}
 	}else{
 		setCookie("score",score,30);
