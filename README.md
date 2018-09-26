@@ -16,7 +16,7 @@
     + [藏宝图游戏](https://chenzp1996.github.io/Javascript/treasureMap%E8%97%8F%E5%AE%9D%E5%9B%BE%E6%B8%B8%E6%88%8F/treasureMap.html)
     + [抽奖大转盘](https://chenzp1996.github.io/Javascript/%E6%8A%BD%E5%A5%96-%E5%A4%A7%E8%BD%AC%E7%9B%98/lottery.html)
     + [无缝滚动广告](https://chenzp1996.github.io/Javascript/%E6%97%A0%E7%BC%9D%E6%BB%9A%E5%8A%A8/wufenghuadong.html)
-    + [面向对象之飞机大战](https://chenzp1996.github.io/Javascript/%E9%A3%9E%E6%9C%BA%E5%A4%A7%E6%88%98%EF%BC%88%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%EF%BC%89/index.html)
+    + [面向对象之飞机大战+cookie+localStorage](https://chenzp1996.github.io/Javascript/%E9%A3%9E%E6%9C%BA%E5%A4%A7%E6%88%98%EF%BC%88%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%EF%BC%89/index.html)
 3. JQuery
     + [悬停放大分割图片](https://chenzp1996.github.io/jQuery/%E6%82%AC%E5%81%9C%E6%94%BE%E5%A4%A7%E5%88%86%E5%89%B2%E5%9B%BE%E7%89%87/index.html)
 4. Ajax
