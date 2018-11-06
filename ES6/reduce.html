@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>数组reduce方法求平均值</title>
+</head>
+<body>
+    <script>
+        //reduce执行的次数会等于arr.length-1
+        let arr = [50,48,90,8464];
+
+        //tmp为中间值，第一次等于arr[0]
+        //item为每一项,从arr[1]开始
+        //index为item的索引
+
+        //求和
+        let sum = arr.reduce((tmp,item,index)=>tmp+item);
+        console.log(sum);
+        
+        //求平均数
+        let average = arr.reduce((tmp,item,index)=>{
+            if(index<arr.length-1){
+                return tmp+item;
+            }else{//最后一次则求平均数
+                return (tmp+item)/arr.length;
+            }
+        });
+        console.log(average);
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        
+        const getData = (url) => {
+            return new Promise((resolve, reject) => {
+                var xhr;
+                if (window.XMLHttpRequest) {
+                    xhr = new XMLHttpRequest();
+                } else {
+                    xhr = new ActiveXObject("Microsoft.XMLHTTP");
+                }
+
+                xhr.onreadystatechange = () => {
+                    if (xhr.readyState === 4 && xhr.status === 200) {
+                        // console.log(xhr.responseText);
+                        resolve(xhr.responseText);
+                    } else if(xhr.status == 404){
+                        reject("error")
+                    }
+                };
+
+                xhr.open("GET", url, true);
+                xhr.send();
+            })
+        }
+        
+
+        // var url1 = "http://api.apiopen.top/singlePoetry";
+        getData("http://api.apiopen.top/singlePoetry")
+            .then(value=>console.log(value))
+            .catch(error=>console.log(error))
+            .finally(()=>{console.log("所有promise执行完毕")})
+    </script>
+</body>
+
+</html>
