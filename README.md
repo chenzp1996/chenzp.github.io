@@ -28,4 +28,5 @@
 6. Canvas
    + [canvas画八大行星](https://chenzp1996.github.io/canvas/canvas%E7%94%BB%E5%85%AB%E5%A4%A7%E8%A1%8C%E6%98%9F/sun.html)
    + [canvas画时钟](https://chenzp1996.github.io/canvas/canvas%E7%94%BB%E6%97%B6%E9%92%9F/clock.html)
-
+7. nodejs + mongoose + ejs
+   + [任务记录簿(clone查看效果，需npm依赖包)](https://github.com/chenzp1996/chenzp1996.github.io/tree/master/nodejs%2Bmongodb%2Bejs/taskBook)
