@@ -1,0 +1,21 @@
+<% if(!li.isfinished){ %>
+<li class="list-group-item row">
+    <h5 class="col-xs-8 unfinashed"><%=li.content%></h5>
+    <div class="btn-group pull-right">
+        <a href="/finished/<%= li._id %>" type="button" class="btn btn-danger glyphicon glyphicon-ok"></a>
+        <button type="button" class="btn btn-default glyphicon glyphicon-edit" data-toggle="modal" data-target="#myModal" data-liId="<%= li._id %>"></button>
+        <!-- 删除模块 -->
+        <a href="/delete/<%=li._id%>" type="button" class="btn btn-default glyphicon glyphicon-trash"></a>
+    </div>
+</li>
+<% }else{ %>
+<li class="list-group-item row lifinashed">
+    <h5 class="col-xs-8 finashed"><%=li.content%></h5>
+    <div class="btn-group pull-right">
+        <a href="/finished/<%= li._id %>" type="button" class="btn btn-default glyphicon glyphicon-ok"></a>
+        <button type="button" class="btn btn-default glyphicon glyphicon-edit" data-toggle="modal" data-target="#myModal"  data-liId="<%= li._id %>"></button>
+        <!-- 删除模块 -->
+        <a href="/delete/<%= li._id %>" type="button" class="btn btn-default glyphicon glyphicon-trash"></a>
+    </div>
+</li>
+<% } %>
