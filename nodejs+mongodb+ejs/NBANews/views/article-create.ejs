@@ -1,0 +1,41 @@
+<!-- 使用公共模块header -->
+<%- include("./components/header") %>
+
+<div class="container">
+    <div class="row">
+        <!-- 头像 -->
+        <div class="col-sm-1 col-sm-offset-2 profile">
+            <a href="" data-toggle="popover" title="<%= post.username %>" data-content="<%= post.portray %>"
+                data-placement="bottom">
+                <img src="/uploads/<%= post.avatar%>" class="img-responsive img-circle">
+            </a>
+        </div>  
+        <!-- 文章 -->
+        <div class="panel panel-default col-sm-6">
+            <div class="panel-body">
+                <form action="create" method="POST">
+                    <div class="form-group">
+                        <label for="title">文章标题</label>
+                        <input name="title" type="text" class="form-control" id="title" placeholder="Article Title">
+                    </div>
+                    <div class="form-group">
+                        <label for="conPass">文章内容</label>
+                        <textarea name="content" class="form-control" rows="12" placeholder="Article Content"></textarea>
+                    </div>
+                    <div class="form-group hidden">
+                        <label for="author">作者</label>
+                        <input name="author" type="text" class="form-control" id="author" value="<%= user._id %>">
+                    </div>
+                    <div class="btn-group btn-group-justified">
+                        <div class="btn-group" role="group">
+                            <button type="submit" class="btn btn-success">发布</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 引用公共模块footer -->
+<%- include("./components/footer") %>

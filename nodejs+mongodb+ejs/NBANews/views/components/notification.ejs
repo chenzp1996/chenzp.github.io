@@ -1,0 +1,13 @@
+<!-- 操作成功 -->
+<% if (info) { %>
+      <div id="successAlert" class="alert alert-success col-sm-4 col-sm-offset-4">
+            <a href="#" class="close" data-dismiss="alert">&times;</a>
+            <strong><%= info %></strong>
+      </div>
+<% }else if(error){ %>
+<!-- 操作失败 -->
+      <div id="errorAlert" class="alert alert-warning col-sm-4 col-sm-offset-4">
+            <a href="#" class="close" data-dismiss="alert">&times;</a>
+            <strong><%= error %> </strong>
+      </div>
+<% } %>
