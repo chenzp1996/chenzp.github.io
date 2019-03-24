@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>太阳系</title>
+</head>
+<body>
+	<canvas id="canvas" width="1000" height="1000" style="background:#000;display: block;margin: 50px auto;">Your browser does not support the canvas element.</canvas>
+
+	<script>
+		var cxt=document.getElementById("canvas").getContext("2d");
+
+		//画轨道
+		function drawTrack(){
+			for(var i=1;i<9;i++){
+			cxt.lineWidth=2;
+			cxt.strokeStyle="#FFF";
+
+			cxt.beginPath();
+			cxt.arc(500,500,i*50,0,360,false);
+			cxt.closePath();
+			cxt.stroke();
+			}
+		}
+		drawTrack();
+
+		var time=0;
+		function drawStar(cycle,color1,color2){
+
+			
+			cxt.save();
+
+			cxt.lineWidth=1;
+			cxt.translate(500,500);
+			
+			cxt.rotate(time*(360/cycle)*Math.PI/180);
+			cxt.beginPath();			
+			cxt.arc(0,-time*50,20,0,360,false);
+			cxt.closePath();
+
+			var starColor=cxt.createRadialGradient(0,-time*50,0,0,-time*50,20);
+			starColor.addColorStop(0,color1);
+			starColor.addColorStop(1,color2);
+			cxt.fillStyle=starColor;
+			cxt.fill();
+			cxt.restore();
+			time+=1;
+		}
+
+		// //太阳
+		// function Sun(){drawStar.call(0,"red","yellow");}
+		// //水星
+		// function Mercury(){drawStar.call(87.7,"#A69697","#5C3E40");}
+		// //金星
+		// function Venus(){drawStar.call(224.701,"#C4BBAC","#1F1315");}
+		// //地球
+		// function Earth(){drawStar.call(365,"#78B1E8","#050C12");}
+		// //火星
+		// function Mars(){drawStar.call(686.98,"#CEC9B6","#76422D");}
+		// //木星
+		// function Jupiter(){drawStar.call(4332.589,"#C0A48E","#322222");}
+		// //土星
+		// function Saturn(){drawStar.call(10759.5,"#F7F9E3","#5C4533");}
+		// //天王星
+		// function Uranus(){drawStar.call(30799.095,"#A7E1E5","#19243A");}
+		// //海王星
+		// function Neptun(){drawStar.call(164.8*365,"#0661B2","#1E3B73");}
+
+		// var sun=new Sun();
+		// var mercury=new Mercury();
+		// var venus=new  Venus();
+		// var earth=new Earth();
+		// var mars=new Mars();
+		// var jupiter=new Jupiter();
+		// var saturn=new Saturn();
+		// var uranus=new Uranus();
+		// var neptun=new Neptun();
+
+		function move(){
+
+			cxt.clearRect(0,0,1000,1000);
+			drawTrack();
+			
+			// sun.drawStar();
+			// mercury.drawStar();
+			// venus.drawStar();
+			// earth.drawStar();
+			// mars.drawStar();
+			// jupiter.drawStar();
+			// saturn.drawStar();
+			// uranus.drawStar();
+			// neptun.drawStar();
+			
+			var sun=drawStar(0,"red","yellow");
+			var mercury=drawStar(87.7,"#A69697","#5C3E40");
+			var venus=drawStar(224.701,"#C4BBAC","#1F1315");
+			var earth=drawStar(365,"#78B1E8","#050C12");
+			var mars=drawStar(686.98,"#CEC9B6","#76422D");
+			var jupiter=drawStar(4332.589,"#C0A48E","#322222");
+			var saturn=drawStar(10759.5,"#F7F9E3","#5C4533");
+			var uranus=drawStar(30799.095,"#A7E1E5","#19243A");
+			var neptun=drawStar(164.8*365,"#0661B2","#1E3B73");
+			
+
+		}
+		
+		setInterval(move,10);
+
+	</script>
+</body>
+</html>

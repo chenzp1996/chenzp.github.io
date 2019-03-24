@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    height: 100vh;
+    background: url("../img/desktopBg.png");
+}
+h1{
+    margin-top: 0;
+}
+.panel-footer span::after{
+    content: "/";
+    padding: 0 10px;
+}
+.panel-footer span:last-child::after{
+    content: "";
+}
+.list-group-item.row{
+    margin: 0;
+}
+
+span.input-group-addon{
+    padding: 0px;
+    border: 0;
+}
+.finashed{
+    color: #3C763D;
+}
+.unfinashed{
+    color: #A94442;
+}

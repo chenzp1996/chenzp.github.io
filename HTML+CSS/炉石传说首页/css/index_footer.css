@@ -1,0 +1,292 @@
+.footerwraper{
+	/*background: black;*/
+	/*height: 478px;*/
+	/*font-size:0;*/
+}
+
+.footer{
+	z-index: 6;
+	position: relative;
+	height: 470px;
+	margin-top: -97px;
+	background: url(../img/footer.jpg) no-repeat center;
+}
+
+.reg_bg{
+	width: 349px;
+	height: 92px;
+	background: url(../img/reg-bg.png) no-repeat center;
+	margin: 0 auto;
+	position: relative;
+	z-index: 7;
+	top: -38px;
+}
+
+.u_regBtn{
+	margin: 0 auto;
+	height: 82px;
+	margin-left: 50px;
+	position: relative;
+	top: 10px;
+	background: url(../img/reg-btn.png) no-repeat ;
+}
+.u_regBtn:hover{
+	background: url(../img/reg-btn.png) no-repeat 0px -84px;
+}
+
+.foot_media{
+	width: 1000px;
+	height: 31px;
+	padding-top: 80px;
+	margin: 0 auto;
+	/*background: lightcoral;*/
+}
+
+.f_cs{
+	width: 380px;
+	height: 30px;
+	float: left;
+}
+
+.f_cs a{
+	display: inline-block;
+	text-decoration: none;
+	font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;
+	font-size: 14px;
+	color: #FFF;
+	height: 30px;
+	line-height: 30px;
+	margin-right: 37px;
+}
+
+.f_cs a span{
+	width: 19px;
+	height: 19px;
+	display: inline-block;
+	position: relative;
+	top: 5px;
+	margin-right: 12px;
+}
+
+.f_cs a .f_cs_icon1{
+	background: url(../img/f-business.png) no-repeat -6px -7px;	
+}
+
+.f_cs a .f_cs_icon2{
+	background: url(../img/f-business.png) no-repeat -36px -8px;
+}
+
+.f_cs a .f_cs_icon3{
+	background: url(../img/f-business.png) no-repeat -8px -32px;
+}
+
+.f_business{
+	width: 360px;
+	height: 30px;
+	float: right;
+}
+
+.f_business h4{
+	display: inline-block;
+	margin: 0 5px 0 2px;
+	line-height: 30px;
+	color: #FFF;
+	
+}
+
+.f_business a{
+	text-decoration: none;
+	display: inline-block;
+	position: relative;
+	
+}
+
+.f_business_icon1{
+	width: 95px;
+	height: 26px;
+	background: url(../img/business-logo.png) -352px 0;
+	top: 9px;
+}
+
+.f_business_icon2,.f_business_icon4{
+	width: 14px;
+	height: 14px;
+}
+
+.f_business_icon2{
+	color: #ac771f;
+	border: 1px solid #2d1702;
+	text-align: center;
+	font-size: 14px;
+	margin: 0 13px;
+	background:#241101;
+}
+
+.f_business_icon3{
+	color: white;
+	text-align: center;
+	top: -2px;
+}
+
+.f_business_icon4_span{
+	width: 16px;
+	height: 16px;
+	background: #241101;
+	display: inline-block;
+	position: relative;
+	top: 1px;
+	margin-left: 2px;
+	position: relative;
+}
+
+.f_business_icon4{
+	background: url(../img/more-icon.png) no-repeat center center;
+	border: 1px solid #2d1702;	
+	cursor: pointer;
+}
+
+.f_b_i4_joiner{
+	position: absolute;
+	width: 756px;
+	height: 90px;
+	overflow: hidden;
+	right: 0;
+	top: 5px;
+	padding: 0px 0 10px 20px;
+	background: #1F1009;
+	display: none;
+	transition: all 1s;
+}
+	
+/*.f_b_i4_joiner_move{
+	animation: f_b_i4_joiner_move 1s;
+	animation-fill-mode: forwards;
+}*/
+	
+/*@keyframes f_b_i4_joiner_move{
+	from{
+		height: 0;
+	}
+	to{
+		height: 90px;
+		border: 1px solid #261c12;
+		}
+}*/
+
+
+.f_b_i4_joiner li{
+	list-style: none;
+	float: left;
+	width: 108px;
+	
+}
+
+.f_b_i4_joiner li a{
+	color: #b5a89f;
+	font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;
+	font-weight: 400;
+	line-height: 24px;
+	font-size: 14px;
+}
+
+.f_b_i4_joiner li:last-of-type{
+	margin-left: 648px;
+}
+.f_b_i4_joiner li:last-of-type a{
+	color: #db6800;
+	text-decoration: underline;
+	
+}
+.f_b_i4_joiner li a:hover{
+	color: white;
+}
+/*-------------f_cprt开始---------------*/
+.foot_cprt{
+	width: 1000px;
+	height: 141px;
+	margin: 0 auto;
+	padding-top: 40px;
+}
+
+.f_cprt_l{
+	width: 270px;
+	height: 85px;
+	float: left;
+}
+
+.f_cprt_l_icon1{
+	display: inline-block;
+	width: 140px;
+	height: 85px;
+	background: url(../img/logo_blizzard.png) no-repeat;
+	
+}
+
+.f_cprt_l_icon2{
+	display: inline-block;
+	width: 125px;
+	height: 43px;
+	background: url(../img/logo_ne.png) no-repeat;
+	margin-bottom: 2px;
+}
+
+.f_cprt_r{
+	width: 633px;
+	height: 141px;
+	float: right;
+}
+
+.f_c_r_ul{
+	margin: 0;
+	width: 643px;
+	height: 30px;
+	padding: 0;
+}
+
+.f_c_r_ul li{
+	list-style: none;
+	float: left;
+}
+.f_c_r_ul li:after{
+	content: "|";
+	color: #552c09;
+	margin: 0 10px;
+}
+.f_c_r_ul li:last-of-type:after{
+	content: "";
+}
+
+
+.f_c_r_ul li a{
+	text-decoration: none;
+	color: white;
+	font-family: "microsoft yahei";
+	font-size: 14px;
+}
+
+
+.f_cprt_r .info{
+	color: #552c09;
+	font-size: 12px;
+	line-height: 20px;
+	font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;
+	padding-right: 18px;
+}
+
+.f_cprt_r .info a{
+	text-decoration: none;
+	color: #552c09;
+}
+
+.f_cprt_r .info a:hover{
+	color: white;
+}
+
+.f_cprt_r .info span:after{
+	content: "|";
+	color: #552c09;
+	margin: 0 2px;
+	
+}
+/*-------------f_cprt结束---------------*/
+

@@ -1,0 +1,666 @@
+/*---------------主文右栏----------------*/
+ .homeConBar{
+ 	width: 340px;
+ 	height: 95%;
+ 	float: left;
+ 	background: url(../img/homeconbar-bg.png);
+ 	margin-top: -30px;
+	margin-left: -24px;
+ }
+ /*------------下载设备选择区-----------*/
+.features{
+	width: 320px;
+	height: 600px;
+	background: url(../img/home-bg-cr.jpg) no-repeat center;
+	margin-left: 8px;
+
+}
+
+.features_logo{
+	margin-left: 3px;
+	width: 326px;
+	height: 192px;
+	background: url(../img/home_logo.png) no-repeat center;
+	
+}
+
+.features_logo_a{
+	width: 320px;
+	height: 192px;
+	display: block;
+}
+
+.features_deviceIcon{
+	width: 261px;
+	height: 85px;
+	margin-top: 35px;
+	margin-left: 6px;
+}
+
+.features_deviceIcon li{
+	list-style: none;
+	float: left;
+	width: 80px;
+	height: 90px;
+	position: relative;
+}
+.features_deviceIcon li a{
+	display: block;
+	width: 80px;
+	height: 90px;
+	cursor: pointer;
+}
+
+.IOS_QRcode{
+	width: 107px;
+	height: 107px;
+	background: url(../img/ewm.jpg) no-repeat;
+	position: absolute;
+	top: -90px;
+	left: 42px;
+	z-index: 2;
+	display: none;
+}
+.Android_QRcode{
+	width: 107px;
+	height: 107px;
+	background: url(../img/android.png) no-repeat ;
+	position: absolute;
+	top: -90px;
+	left: -75px;
+	display: none;
+}
+
+
+.deviceIcon1 {
+	background: url(../img/device-icon.png) no-repeat 0px -180px;
+}
+.deviceIcon1_original{
+	background: url(../img/device-icon.png) no-repeat 0px 0px;
+}
+.deviceIcon1_hover:hover{
+	background: url(../img/device-icon.png) no-repeat 0px -90px;
+}
+.deviceIcon1_click{
+	background: url(../img/device-icon.png) no-repeat 0px -180px;
+}
+
+.deviceIcon2 {
+	background: url(../img/device-icon.png) no-repeat -80px 0px;
+}
+.deviceIcon2_original{
+	background: url(../img/device-icon.png) no-repeat -80px 0px;
+}
+.deviceIcon2_hover:hover{
+	background: url(../img/device-icon.png) no-repeat -80px -90px;
+}
+.deviceIcon2_click{
+	background: url(../img/device-icon.png) no-repeat -80px -180px;
+}
+
+
+.deviceIcon3 {
+	background: url(../img/device-icon.png) no-repeat -160px 0px;
+}
+.deviceIcon3_original{
+	background: url(../img/device-icon.png) no-repeat -160px 0px;
+}
+.deviceIcon3_hover:hover{
+	background: url(../img/device-icon.png) no-repeat -160px -90px;
+}
+.deviceIcon3_click{
+	background: url(../img/device-icon.png) no-repeat -160px -181px ;
+}
+
+.clientDownload{
+	width: 220px;
+	height: 61px;
+	background:url(../img/download-btn2.png) no-repeat -38px -370px;
+	margin: 20px auto;
+	cursor: pointer;
+}
+
+.clientDownload_1{
+	background:url(../img/download-btn2.png) no-repeat -38px -370px;
+}
+.clientDownload_2{
+	background:url(../img/download-btn2.png) no-repeat -38px -140px;
+}
+.clientDownload_3{
+	background:url(../img/download-btn2.png) no-repeat -38px -255px;
+}
+
+/*-----未完成 需要用js/jq添加点击事件---------*/
+
+/*-------------dragWrapper文档去---------------*/
+
+.dragWrapper{
+	width: 340px;
+	height: 1900px;
+	margin-top: -15px;
+	margin-left: 8px;
+	padding-left: 0px;
+	padding-top: -12px;
+}
+
+.dragWrapper .bot{
+	width: 310px;
+	list-style: none;
+	margin-left: 10px;
+	margin-top: 15px;
+}
+
+.bot1,.bot2,.bot3,.bot4,.bot6{
+	height: 265px;
+	background: url(../img/moudel-top-bg.jpg) no-repeat top right;
+}
+.bot5{
+	height: 680px;
+}
+
+.dragWrapper h3{
+	display: inline-block;
+	color: #03345f;
+	font-size: 16px;
+	margin-top: 30px;
+	line-height: 30px;
+	font-family:"microsoft yahei";
+}
+
+.dragWrapper .boticon{
+	display: inline-block;
+	float: left;
+	width: 30px;
+	height: 30px;
+	margin:0 10px;
+}
+
+.dragWrapper .boticon1{	
+	background: url(../img/icon.png) no-repeat -87px -4px;
+}
+
+.dragWrapper .boticon2{
+	background: url(../img/icon.png) no-repeat -46px -74px;
+}
+
+.dragWrapper .boticon3{
+	background: url(../img/icon.png) no-repeat -87px -39px;
+}
+
+.dragWrapper .boticon4{
+	background: url(../img/icon.png) no-repeat -4px -189px;
+}
+/*轮播显示器*/
+.esportConBox{
+	width: 244px;
+	height: 180px;
+	margin: 0 auto;
+	overflow: hidden;
+	
+	/*float: right;*/
+}
+
+
+/*----轮播内容 3个div（以下）-----*/
+
+.bot1 .esportCon{
+	width: 976px;
+	height: 124px;
+	text-align: center;
+	display: block;
+	position: relative;
+	animation: esportMove 8s;
+	animation-iteration-count: infinite;	
+}
+@keyframes esportMove{
+	0%,33%{left: 0px;}
+	35%,66%{left: -244px;}
+	70%,96%{left: -488px;}
+	100%{left: -732px;}
+}
+
+.esportCon_right{
+	left: -244px;
+}
+.esportCon h4{
+	margin: 20px auto;
+	font-size: 16px;
+	color: #251c0f;
+	font-family: "微软雅黑";	
+}
+
+
+.esportwrap{
+	width: 244px;
+	height: 144px;
+	float: left;
+	text-decoration: none;
+}
+
+.esportwrap .espor1{
+	width: 244px;
+	height: 124px;	
+	/*z-index: 10;*/
+}
+
+.esportwrap .espor1:hover {
+	background: #000;
+	opacity: 0.5;
+	z-index: 100;
+}
+.esportwrap img{
+	width: 220px;
+	transition: all .3s;
+	/*z-index: 20;
+	position: relative;*/
+}
+
+.esportwrap img:hover {
+	transform: scale(1.2,1.2);
+}
+/*.esport1:hover{
+	background: #EEE ;
+	opacity: .7;
+}*/
+
+
+.esportwrap .esport1{
+	width: 244px;
+	height: 122px;
+	background: url(../img/wesg-244-124bg.png);
+}
+.esportwrap .esport2{
+	width: 244px;
+	height: 122px;
+	background: url(../img/sqtx_bg.png);
+}
+.esportwrap .esport3{
+	width: 244px;
+	height: 122px;
+	background: url(../img/wesg-244-124bg.png);
+}
+
+.bot1_icon_l{
+	width: 7px;
+	height: 14px;
+	position: relative;
+	top: 70px;
+	left: 15px;
+	background: url(../img/esport-icon.gif) no-repeat 0px 0px;
+	cursor: pointer;
+}
+.bot1_icon_l:hover{
+	background: url(../img/esport-icon.gif) no-repeat -16px 0px;
+}
+.bot1_icon_r{
+	width: 7px;
+	height: 14px;
+	position: relative;
+	top: -124px;
+	left: 288px;
+	background: url(../img/esport-icon.gif) no-repeat -8px 0px;
+	cursor: pointer;
+}
+.bot1_icon_r:hover{
+	background: url(../img/esport-icon.gif) no-repeat -24px 0px;
+}
+
+/*----轮播内容 3个div（以上）-----*/
+.bot2{
+	height: 210px;
+}
+
+.bot2_img{
+	margin: 0 auto;
+	width: 265px;
+	height: 117px;
+	background: url(../img/live.jpg) no-repeat;
+	display:block;
+}
+
+.bot3{
+	height: 220px;
+}
+
+.dragWrapper .bbsList li{
+	width: 265px;
+	height: 28px;
+	list-style: none;
+	border-bottom: 1px solid #E8D6A8;
+	margin-left: -20px;
+}
+.dragWrapper .bbsList li .bot_tag_icon{
+	background: url(../img/icon.png) no-repeat -135px -143px;
+	width: 10px;
+	height: 10px;
+	display:inline-block;
+}
+.dragWrapper .bbsList li a{
+
+	text-decoration: none;
+	color: #5b4b38;
+	font-size: 12px;
+	
+	line-height: 28px;
+}
+.dragWrapper .bbsList li:hover a{
+	color: #DB6800;
+	
+}
+.dragWrapper .bbsList li:hover .bot_tag_icon{
+	background: url(../img/icon.png) no-repeat -135px -113px;
+}
+
+.more_icon{
+	width: 33px;
+	height: 20px;
+	display: inline-block;
+	background: url(../img/icon-more.png) no-repeat ;
+	margin-top: 20px;
+	margin-left: 250px;
+}
+
+.bot5 .module_normal{
+	width: 260px;
+	height: 75px;
+	margin-left: -20px;
+	position: relative;
+}
+
+.bot5 .module_normal li{
+	list-style: none;
+	border: 1px solid #EFD4AD;
+	border-radius: 5px;
+	margin-bottom: 15px;
+	background: #D1B181;
+}
+
+.bot5 .module_normal li a{
+	display: block;
+	width: 260px;
+	text-decoration: none;
+	padding: 22px 20px;
+}
+
+.bot5 .module_normal li a h4{
+	font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;
+	font-size: 15px;
+	color: #251c0f;
+	margin: 0;
+}
+.bot5 .module_normal li a p{
+	color: #66563d;
+	font-size: 14px;
+	font-family: "Microsoft YaHei";
+	margin: 0;
+}
+/*-------------------bot4icon效果------------------*/
+.bot5 .module_normal li .a1{
+	background: url(../img/commnity-icon.png) no-repeat 175px -279px;
+}
+.bot5 .module_normal li .a1:hover{
+	background: url(../img/commnity-icon.png) no-repeat 175px -377px;
+}
+.bot5 .module_normal li .a2{
+	background: url(../img/commnity-icon.png) no-repeat 175px -775px;
+}
+.bot5 .module_normal li .a2:hover{
+	background: url(../img/commnity-icon.png) no-repeat 175px -896px;
+}
+.bot5 .module_normal li .a3{
+	background: url(../img/commnity-icon.png) no-repeat 178px -1030px;
+}
+.bot5 .module_normal li .a3:hover{
+	background: url(../img/commnity-icon.png) no-repeat 178px -1033px;
+}
+.bot5 .module_normal li .a4{
+	background: url(../img/commnity-icon.png) no-repeat 175px -1120px;
+}
+.bot5 .module_normal li .a4:hover{
+	background: url(../img/commnity-icon.png) no-repeat 175px -1234px;
+}
+.bot5 .module_normal li .a5{
+	background: url(../img/commnity-icon.png) no-repeat 175px -1629px;
+}
+.bot5 .module_normal li .a5:hover{
+	background: url(../img/commnity-icon.png) no-repeat 175px -1721px;
+}
+.bot5 .module_normal li .a6{
+	background: url(../img/commnity-icon.png) no-repeat 175px -2040px;
+}
+.bot5 .module_normal li .a6:hover{
+	background: url(../img/commnity-icon.png) no-repeat 175px -2045px;
+}
+.bot5 .module_normal li .a7{
+	background: url(../img/commnity-icon.png) no-repeat 175px -513px;
+}
+.bot5 .module_normal li .a7:hover{
+	background: url(../img/commnity-icon.png) no-repeat 175px -615px;
+}
+.bot5 .module_normal li .a8{
+	background: url(../img/commnity-icon.png) no-repeat 175px -1355px;
+}
+.bot5 .module_normal li .a8:hover{
+	background: url(../img/commnity-icon.png) no-repeat 175px -1444px;
+}
+
+.bot5 .module_normal li:nth-of-type(6) .baoxuefuwu{
+	width: 150px;
+	height: 150px;
+	padding: 10px;
+	position: absolute;
+	top: 250px;
+	left: 40px;
+	background: rgba(0,0,0,.5);
+	border-radius: 5px;
+	display: none;
+}
+.bot5 .module_normal li:nth-of-type(6){
+	
+}
+
+.bot5 .module_normal li:nth-of-type(6):hover .baoxuefuwu{
+	display: block;
+}
+.baoxuefuwu:hover{
+	display: block;
+}
+.baoxuefuwu img{
+	height: 150px;
+	width: 150px;
+}
+
+/*-------------------bot4icon效果------------------*/
+
+.bot6{
+	height: 251px;
+}
+
+.bot6 .commen_ul{
+	width: 310px;
+	height: 210px;
+	padding: 20px 20px 0 20px;
+	position: relative;
+}
+
+.bot6 .commen_ul .li1,.li2,.li3{
+	list-style: none;
+	width: 140px;
+	height: 40px;
+}
+
+.bot6 .commen_ul li a{
+	text-decoration: none;
+}
+
+.bot6 .commen_ul .li1 .bot6_icon1{
+	display:inline-block;
+	width: 40px;
+	height: 40px;
+	background: url(../img/share.png) -376px 0;
+}
+
+.bot6 .commen_ul .li2 .bot6_icon2{
+	display:inline-block;
+	width: 40px;
+	height: 40px;
+	background: url(../img/share.png) -208px 2px;
+	transition: all .3s; 
+}
+.bot6 .commen_ul .li2 .bot6_icon2:hover{
+	background: url(../img/share.png) -208px 67px;
+}
+
+.bot6 .commen_ul .li3{
+	float: left;
+	margin-top: 20px;
+}
+.bot6 .commen_ul .li3 .bot6_icon3{
+	display:block;
+	width: 40px;
+	height: 40px;
+	background: url(../img/share.png) -460px 0;
+	float: left;
+	transition: all .3s;
+}
+.bot6 .commen_ul .li3 .bot6_icon3:hover{
+	background: url(../img/share.png) -460px 65px;
+}
+.bot6 .commen_ul .li3 a{
+	display: block;
+	float: left;
+	margin-top: 10px;
+}
+.bot6 .commen_ul .li3 a:hover{
+	color: #DB6800;
+}
+
+.bot6 .commen_ul .li1 span,.li2 span{
+	font-size: 14px;
+	display: block;
+	float: left;
+}
+.li1 span:nth-of-type(2){
+	color: green;
+}
+.li1 span:nth-of-type(2) a:hover{
+	color: green;
+		
+}
+.bot6 .commen_ul .li1 span:nth-of-type(3){
+	color: #F2743E;
+}
+.li1 span:nth-of-type(3) a:hover{
+	color: #F2743E;
+}
+.li2 span:nth-of-type(2) a:hover{
+	color: #DC7312;
+}
+
+.QRCode{
+	position: absolute;
+	width: 92px;
+	height: 92px;
+	padding: 10px;
+	top: -90px;
+	left: 20px;
+	display: none;
+	background: rgba(113,99,77,0.7);
+	border-radius: 6px;
+}
+.code_webapp{
+	top: -30px;
+}
+
+.li1 span:nth-of-type(2) a:hover+.WeChatQRCode1{
+	display: block;
+}
+.li1 span:nth-of-type(3) a:hover+.WeChatQRCode2{
+	display: block;
+}
+.li3 a:hover+.code_webapp{
+	display: block;
+}
+.QRCode:hover{
+	display: block;
+}
+
+.QRCode img{
+	display: block;
+	width: 92px;
+	height: 92px;
+}
+
+.bot6 .commen_ul .li1,.li2{
+	float: left;
+}
+.bot6 .commen_ul .li2{
+	line-height: 40px;
+}
+
+.bot6 h4,p{
+	margin: 0;
+}
+
+.bot .li4{
+	width: 310px;
+	float: left;
+	margin-top: 30px;
+}
+
+.bot .li4_l{
+	float: left;
+	margin-left: 2px;
+	padding-right: 20px;
+}
+.bot .li4_r{
+	float: left;
+	margin-left: 10px;
+}
+.bot6 .li4 span{
+	display: block;
+	color: #251c0f;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	font-weight: 600;
+}
+.bot6 .li4 p{
+	margin-top: 10px;
+	color: #251C0F;
+	font-family: "微软雅黑";
+	font-size: 12px;
+}
+.bot6 .li4_l p:hover{
+	cursor: pointer;
+	color: #DB6800;
+}
+
+.commen_ul .li1 span:nth-of-type(1){
+	font-size: 14px;
+	font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;
+	color: #3d8403;
+}
+
+.bot6 .li1,.li4_l{
+	background: url(../img/border.png) no-repeat right;
+}
+
+.bot6 .li2{
+	margin-left: 10px;
+}
+
+.commen_ul a{
+	font-size: 14px;
+	font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;
+	color: #251c0f;
+	margin-right:2px ;
+}
+
+.bg_bot{
+	display: block;
+	background: url(../img/homeconbar-bg-bot.png) no-repeat;
+	width: 350px;
+	height: 30px;
+	margin-top: -5px;
+	margin-left: -18px;
+}

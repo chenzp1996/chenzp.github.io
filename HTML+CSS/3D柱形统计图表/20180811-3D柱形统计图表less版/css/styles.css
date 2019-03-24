@@ -1,0 +1,264 @@
+body,
+ul,
+li,
+h1,
+h5,
+p {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+ul,
+li {
+  list-style: none;
+}
+/*----------公共样式---------*/
+.pseudo-element {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.center {
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.transZ {
+  transform: translateZ(20px);
+}
+/*变量设置*/
+/*---------------背景图-------------*/
+.background {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 758px;
+  background: linear-gradient(120deg, rgba(50, 150, 100, 0.4), rgba(0, 0, 100, 0));
+  perspective: 1500px;
+}
+.background::before {
+  width: 100%;
+  height: 100%;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(0deg, rgba(0, 0, 200, 0.4), rgba(0, 0, 200, 0));
+}
+.background::after {
+  width: 100%;
+  height: 100%;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(240deg, rgba(150, 50, 50, 0.4), rgba(0, 0, 200, 0));
+  z-index: -1;
+}
+.background input {
+  display: none;
+}
+.background input:checked + .wraper {
+  box-shadow: 0px 50px 40px 0px rgba(0, 0, 0, 0.75);
+  transform: translateZ(20px) rotateX(60deg) translateY(-50px);
+  transform-origin: 50% 50% 150px;
+}
+.background input:checked + .wraper::before {
+  background: black;
+  transform: translateZ(-20px);
+}
+.background input:checked + .wraper .photo::after {
+  background: rgba(0, 50, 100, 0.8);
+}
+.background input:checked + .wraper .photo::after {
+  background: rgba(0, 50, 100, 0.8);
+}
+.background input:checked + .wraper h1,
+.background input:checked + .wraper h5 {
+  transform: translateZ(40px) translateY(-30px);
+  opacity: 0;
+}
+.background input:checked + .wraper h5 {
+  transform: translateZ(30px) translateY(-20px);
+  opacity: 0;
+}
+.background input:checked + .wraper p {
+  transform: translateZ(0px) translateY(100px);
+}
+.background input:checked + .wraper .chart .bar {
+  background: #E7D1D1;
+}
+.background input:checked + .wraper .chart .bar span {
+  opacity: 1;
+}
+.background input:checked + .wraper .chart .bar1,
+.background input:checked + .wraper .chart .bar7 {
+  transform: rotate(25deg) translateZ(150px);
+  transition-delay: 0.45s;
+}
+.background input:checked + .wraper .chart .bar2 {
+  transform: rotate(25deg) translateZ(75px);
+  transition-delay: 0.6s;
+}
+.background input:checked + .wraper .chart .bar3 {
+  transform: rotate(25deg) translateZ(125px);
+  transition-delay: 0.45s;
+}
+.background input:checked + .wraper .chart .bar4 {
+  transform: rotate(25deg) translateZ(175px);
+  transition-delay: 0.3s;
+}
+.background input:checked + .wraper .chart .bar5,
+.background input:checked + .wraper .chart .bar6 {
+  transform: rotate(25deg) translateZ(50px);
+  transition-delay: 0.66s;
+}
+.background .wraper {
+  top: 104px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  position: relative;
+  width: 400px;
+  border-radius: 10px;
+  height: 550px;
+  background: black;
+  text-align: center;
+  cursor: pointer;
+  transition: all .6s;
+  transform-style: preserve-3d;
+}
+.background .wraper::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all .6s;
+  border-radius: 10px;
+}
+.background .wraper .chart .bar {
+  width: 25px;
+  height: 25px;
+  background: white;
+  transform-style: preserve-3d;
+  float: left;
+  margin: 0 13px;
+  color: #190808;
+  transform: translateZ(0px) rotateZ(45deg);
+  transition: all .6s;
+}
+.background .wraper .chart .bar span {
+  opacity: 0;
+}
+.background .wraper .chart .bar b {
+  font-size: 16px;
+  position: absolute;
+  transform: rotateZ(90deg) translateY(30px) rotateY(90deg) translateX(27px) translateZ(16.5px);
+}
+.background .wraper .photo {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  background: url(../img/bg.jpg) no-repeat center;
+}
+.background .wraper .photo::after {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: background-color 0.5s ease-in-out;
+}
+.background .wraper h1 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  font-size: 40px;
+  top: 150px;
+  transition: all .6s;
+}
+.background .wraper h5 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  font-size: 21px;
+  top: 200px;
+  transition: all .6s;
+}
+.background .wraper p {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  font-size: 40px;
+  top: 320px;
+  transition: all .6s;
+}
+.background .wraper .chart {
+  position: absolute;
+  top: 260px;
+  left: 20px;
+  transform-style: preserve-3d;
+}
+.background .wraper .chart .bar::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  transform: translateZ(0px) translateY(25px) rotateX(-90deg);
+  background: white;
+  transform-origin: 0 0 0;
+  background: linear-gradient(to bottom, #feffff 0%, #ddf1f9 0%, #a0d8ef 100%);
+  transition: all .6s;
+}
+.background .wraper .chart .bar::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  transform: rotateZ(-90deg) translateY(12.5px) rotateX(-90deg) translateX(-12.5px);
+  background: white;
+  transform-origin: center 0 0;
+  background: linear-gradient(to bottom, #feffff 0%, #85d7f7 0%, #4c8596 100%);
+  transition: all .6s;
+}
+.background .wraper .chart .bar1::before,
+.background .wraper .chart .bar7::before,
+.background .wraper .chart .bar1::after,
+.background .wraper .chart .bar7::after {
+  height: 150px;
+}
+.background .wraper .chart .bar2::before,
+.background .wraper .chart .bar2::after {
+  height: 75px;
+}
+.background .wraper .chart .bar3::before,
+.background .wraper .chart .bar3::after {
+  height: 125px;
+}
+.background .wraper .chart .bar4::before,
+.background .wraper .chart .bar4::after {
+  height: 175px;
+}
+.background .wraper .chart .bar5::before,
+.background .wraper .chart .bar6::before,
+.background .wraper .chart .bar5::after,
+.background .wraper .chart .bar6::after {
+  height: 50px;
+}

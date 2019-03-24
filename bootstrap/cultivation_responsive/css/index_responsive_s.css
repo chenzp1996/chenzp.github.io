@@ -1,0 +1,252 @@
+
+/*------------------------------------*/
+
+@media only screen and (min-width: 375px) {
+	
+
+	.col-s-1{width:8.33%;}
+	.col-s-2{width:16.66%;}
+	.col-s-3{width:25%;}
+	.col-s-4{width:33.33%;}
+	.col-s-5{width: 41.66%;}
+	.col-s-6{width: 50%;}
+	.col-s-7{width: 58.33%;}
+	.col-s-8{width:66.66%;}
+	.col-s-9{width:75%;}
+	.col-s-10{width:83.33%;}
+	.col-s-11{width: 91.66%;}
+	.col-s-12{width: 100%;}
+
+/*----------------banner开始-----------------*/
+	.banner:after {
+	    content: "";
+	    clear: both;
+	    display: block;
+	}
+	
+	.banner{
+		min-height: 870px;
+		background: url(../img/banner.jpg) no-repeat;
+		background-size: auto 100%;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		/*text-align: center;*/
+		}	
+		
+	.clearfix{
+		position: relative;
+		
+		min-height: 60px;
+		background: rgba(51,51,51,0.5);
+		margin: 0 auto;	
+	}
+	
+	.nav_log{
+		display: inline-block;
+		width: 28px;
+		height: 25px;
+		background: url(../img/nav.png) no-repeat center;
+		margin: 15px 0 0 15px;
+	}
+	
+	.nav_log:hover + .menu{
+		display: block;
+		/*height: 465px;*/
+	}
+		
+	.clearfix .menu{
+		float: left;
+		margin: 0;
+		position: absolute;
+		width: 100%;
+		margin-top: 20px;
+		background: #394C53;
+		text-align: center;
+		/*z-index: 1;*/
+		/*transition: all 1s;*/ 
+		display: none;
+	}
+		
+	.clearfix ul li{
+		list-style: none;
+		color: yellow;	
+		padding: 6px 0;
+		margin-top: 10px;
+	}
+	
+	.clearfix ul li a{
+		text-decoration: none;
+		font-family:'Open Sans', sans-serif;
+		font-size: 15.4px;
+		color: white;
+	}
+		
+	.clearfix ul li:first-of-type{
+		color: yellow;
+		border-top: 4px solid #FAEE0D;
+	}
+	
+	.clearfix ul li:first-of-type a{
+		color: yellow;	
+	}
+	
+	.clearfix form{
+		position: relative;
+		display: inline-block;
+		margin-top: 14px;
+		margin-right: 20px;
+		float: right;
+		width: 50%;
+	}
+	
+	.clearfix form .search{
+		width: 70%;
+		background: none;
+		border: 1px solid white;
+		outline: none;
+		font-family: "微软雅黑";
+		font-size: 15px;
+		padding: 5px 0px 5px 5px;
+		color: white;
+		display: inline-block;
+		float: right;
+	}
+	
+	.clearfix form .submit{
+		position: absolute;
+		background:url(../img/search.png) no-repeat center;
+		width: 22px;
+		height: 22px;
+		right: 5px;
+		top: 5px;
+		border: none;
+		outline: none;
+		cursor: pointer;
+	}
+	
+/*-----------------banner结束-------------------*/
+
+/*-----------------title-------------------*/
+.banner .title{	
+	display: block;
+	border-top: 5px solid white;
+	border-bottom: 5px solid white;
+	margin: 4em auto 0;
+	line-height:50px;
+	font-size: 2em;
+	font-weight: bold;
+	text-decoration: none;
+	color: white;
+	font-family: "RexBoldInline", '宋体';
+	/*animation: titleMove 1s;*/
+}
+
+@font-face
+{
+	font-family: RexBoldInline;
+	src: url(../img/RexBoldInline.otf);
+}
+/*--丄丄丄丄丄丄-title-丄丄丄丄丄丄丄--*/
+
+.banner .grids{
+	/*width: 1140px;
+	height: 800px;*/
+	margin: 80px auto 0px;
+	overflow: hidden;
+}
+
+.banner .grids .gridsImg{
+	background-color: #16A667;
+	margin-left: 5.55%;
+	float: left;
+	padding: 0 10px;
+	box-sizing: border-box;
+	margin-top: 20px;
+}
+
+.banner .grids .gridsImg img{
+	display: block;
+	/*margin: 10px auto;*/
+	border: 5px solid white;
+	border-radius: 50%;
+	transition: all .3s;
+}
+
+.banner .grids .gridsImg img:hover{
+	transform: rotateY(360deg);
+}
+
+.banner .grids .gridsImg h2{
+	font-size: 16.8px;
+	font-family: "微软雅黑";
+	text-align: center;
+	margin-bottom: 5px;
+	color: white;
+}
+
+.banner .grids .gridsImg p{
+	text-align: center;
+	font-family: "微软雅黑";
+	color: white;
+	font-size: 0.9em;
+}
+
+/*----------------about start------------------*/
+
+.about_section{
+	background: #EEE;
+}
+
+.work_clearBox{
+	padding: 20px 0 20px 0;
+}
+
+.about_section .p1,.p2{
+	padding: 20px;
+	font-size: 0.8em;
+	margin: 0;
+}
+
+/*----------work_section  start---------------*/
+	.work_section ul{
+		overflow: hidden;
+	}
+	.work_section ul li{
+		list-style: none;
+		float: left;
+		
+	}
+	
+	.work_section ul li:hover .textBox{
+		transform: scale(1,1);
+		box-shadow: 0 0 10px 0 white;
+	}
+	
+	.work_section .textBox{
+		position: absolute;
+		transition: all 1s;
+		transform: scale(0);
+		top: 0px;
+		/*left: 15px;*/
+		background: rgba(15, 16, 15, 0.16);
+		padding: 28% 35%;
+	}
+	
+	.work_section ul li img{
+		display: block;
+		float: left;
+	}
+
+	.footer_section .container .social_icons .icon{
+		margin: 10px;
+	}
+
+	.footer_section .container .bottom_menu a{
+		font-size: 15px;
+		padding: 0 5px;
+	}
+
+	.footer_section .container p{
+		font-size: 17px;
+	}
+}

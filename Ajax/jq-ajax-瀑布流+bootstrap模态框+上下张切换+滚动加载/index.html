@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>jq-ajax-获取图片(滚动加载)</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-3 col0 col"></div>
+            <div class="col-xs-3 col1 col"></div>
+            <div class="col-xs-3 col2 col"></div>
+            <div class="col-xs-3 col3 col"></div>
+        </div>
+        <div class="modal fade" tabindex="-1" role="dialog" id="myModal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <img class="bigPic img-thumbnail" src="">
+                    <div class="left">
+                        <span class="prev"></span>
+                    </div>
+                    <div class="right">
+                        <span class="next"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <style>
+        .container {
+            background: lightcoral;
+        }
+
+        .col img {
+            margin: 10px 0;
+            width: 100%;
+        }
+
+        .bigPic {
+            width: 100%;
+        }
+
+        .modal-content {
+            position: relative;
+        }
+
+        .left,
+        .right {
+            width: 50%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+        }
+
+        .left {
+            left: 0;
+        }
+
+        .left:hover :first-child,
+        .right:hover :first-child {
+            opacity: 1;
+        }
+
+        .left .prev,
+        .right .next {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 45%;
+            opacity: 0.3;
+        }
+
+        .left .prev {
+            left: 20px;
+            background: url("imges/left.png");
+        }
+
+        .right {
+            right: 0;
+        }
+
+        .right .next {
+            background: url("imges/right.png");
+            right: 20px;
+        }
+    </style>
+
+    <script>
+        var pageNum = 1;
+
+        //通过ajax获取图片
+        function getData() {
+            $.ajax({
+                type: "get",
+                url: "https://www.apiopen.top/meituApi",
+                page: pageNum,
+                dataType: "json",
+                success: function (response) {
+                    $.each(response.data, function (index, value) {
+                        //分别给不同的列添加图片
+                        $(".col" + (index % 4)).append(
+                            '<img class="img-thumbnail" data-toggle="modal" data-target="#myModal" src="' +
+                            value.url +
+                            '">')
+                    });
+                    pageNum++;
+
+                    //点击某张图片放大展示图片原图
+                    $.each($(".row img"), function (index, value) {
+                        $(this).click(function () {
+                            $(".modal-content img").attr("src", $(this).attr("src"));
+                        });
+                    });
+
+                }
+            });
+        }
+        getData(); //初始化加载图片
+
+        //滚动加载图片
+        $(window).scroll(function () {
+            if (pageYOffset + innerHeight + 1 >= $(".container").height()) {
+                getData();
+            }
+        });
+        
+        //图片播放顺序为每列从上到下
+        //点击按钮下一张
+        $(".next").click(function () {
+            var bigPic = $(".modal-content img").attr("src");
+            for(let i = 0; i< $(".row img").length;i++){
+                if (bigPic ===  $(".row img")[i].src) {
+                    if(i >= $(".row img").length-1){
+                        getData();
+                    }
+                    else{
+                        $(".modal-content img").attr("src",  $(".row img")[i+1].src);
+                    }
+                }
+            }
+        });
+        //点击按钮上一张
+        $(".prev").click(function () {
+            var bigPic = $(".modal-content img").attr("src");
+            for(let i = 0; i< $(".row img").length;i++){
+                if (bigPic ===  $(".row img")[i].src) {
+                    // console.log(i);
+                    //以当前大图在所有图片中的索引来找到前一张图片
+                    if(i > 0){
+                        $(".modal-content img").attr("src",  $(".row img")[i-1].src);
+                    }
+                    else{
+                        $(".modal-content img").attr("src",  $(".row img")[0].src);
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

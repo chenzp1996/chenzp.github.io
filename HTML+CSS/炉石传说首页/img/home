@@ -1,0 +1,1001 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="copyright" content="&copy;2018 暴雪娱乐有限公司版权所有 上海网之易网络科技发展有限公司" />
+        <meta content="width=1200,maximum-scale=1.0" name="viewport" />
+        <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+	    <meta name="keywords" content="炉石传说,国服,炉石传说官网,炉石，炉石传说下载,炉石传说卡组,暴雪,卡牌游戏,炉石传说扩展包,炉石手机版,炉石传说充值,魔兽英雄传,炉石传说手机版，炉石手机版，上古之神的低语,卡拉赞之夜，龙争虎斗加基森, 加基森，勇闯安戈洛，冰封王座的骑士，狗头人与地下世界，女巫森林" />
+	    <meta name="description" content="《炉石传说》最新扩展包“女巫森林”现已公布。快来和吉尔尼斯的居民一起冒险吧！ " />
+        <link rel="icon" href="https://hearthstone.nosdn.127.net/3/common/hs.ico" type="image/x-icon"/>
+        <link rel="shortcut icon" href="https://hearthstone.nosdn.127.net/3/common/hs.ico" type="image/x-icon"/>
+    <title>《炉石传说》官方网站_暴雪首款免费休闲卡牌网游</title>
+    <link rel="stylesheet" href="/css/d5c9c0fc.features.min.css"/>
+<link rel="stylesheet" href="https://fs.bnet.163.com/css/nav-bar.css?t=1532331901394">
+<link rel="stylesheet" href="https://fs.bnet.163.com/css/module/footer.css?t=1532331901394">
+    <link rel="stylesheet" href="/css/e134fb5b.home.css" type="text/css" media="all" />
+</head>
+
+
+    <body>
+        <div id="wraper" data-nav="1" class="homepage">
+            <div id="content-bot">
+                
+                <!-- <video id="headerFlash" autoplay="autoplay" loop="true" preload="auto" width="1200" height="224">
+    <source src="http://hearthstone.nos.netease.com/3/home/20151114/header_v2.webm" type="video/webm" />
+    <source src="http://hearthstone.nos.netease.com/3/home/20151114/header_v2.mp4" type="video/mp4" />
+</video> -->
+<!-- <div class="video-mask"></div> -->
+ <ul id="scene" class="card-features">
+        <li class="layer card-1" data-depth="0.15"><img src="https://blz.nosdn.127.net/1/tm/hearthstone/activities/drboom//home_card_01.png"/></li>
+        <li class="layer card-2" data-depth="0.25"><img src="https://blz.nosdn.127.net/1/tm/hearthstone/activities/drboom//home_card_02.png"/></li>
+        <li class="layer card-3" data-depth="0.13"><img src="https://blz.nosdn.127.net/1/tm/hearthstone/activities/drboom//home_card_03.png"/></li>
+        <li class="layer card-4" data-depth="0.30"><img src="https://blz.nosdn.127.net/1/tm/hearthstone/activities/drboom//home_card_04.png"/></li>
+        <li class="layer card-5" data-depth="0.20"><img src="https://blz.nosdn.127.net/1/tm/hearthstone/activities/drboom//home_card_05.png"></li>
+</ul>
+<div id="header">
+    <h1 class="logo"><a href="/home"></a></h1>
+    <div class="c-search" id="j-search">
+        <input type="text" value="" maxlength="50" placeholder="输入关键字">
+        <a hidefocus="true" href="javascript:;"></a>
+    </div>
+    <div id="navWrap">
+        <ul class="clearFix" id="nav">
+            <li class="nav1">
+                <a hidefocus="true" href="/home/" class="active"></a>
+            </li>
+            <li class="nav2">
+                <a hidefocus="true" href="/news?new" ></a>
+                <ul>
+                    <li>
+                        <a href="/news?new#news">最新</a>
+                    </li>
+                    <li>
+                        <a href="/news?blog#news">博文</a>
+                    </li>
+                    <li>
+                        <a href="/news?match#news">赛事</a>
+                    </li>
+                    <li>
+                        <a href="/news?events#news">活动</a>
+                    </li>
+                    <li>
+                        <a href="/news?media#news">媒体</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav3">
+                <a hidefocus="true" href="/gameguide/" ></a>
+                <ul>
+                    <li>
+                        <a href="/gameguide/#version">版本</a>
+                    </li>
+                    <li>
+                        <a href="/gameguide/#basic">基础知识</a>
+                    </li>
+                    <li>
+                        <a href="/gameguide/#event">炉石大事件</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav4">
+                <a hidefocus="true" href="/media/" ></a>
+                <ul>
+                    <li>
+                        <a href="/media/#video">视频</a>
+                    </li>
+                    <li>
+                        <a href="/media/#pictures">截图</a>
+                    </li>
+                    <li>
+                        <a href="/media/#wallpaper">壁纸</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav5">
+                <a hidefocus="true" href="/cards/" ></a>
+            </li>
+            <li class="nav6">
+                <a hidefocus="true" href="/download/" ></a>
+            </li>
+            <li class="nav7">
+                <a hidefocus="true" href="javascript:;" ></a>
+                <ul>
+                    <li>
+                        <a href="/standings/">积分排名</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav8">
+                <a hidefocus="true" href="http://bbs.hs.blizzard.cn/" target="_blank" ></a>
+            </li>
+            <li class="sprite-left"></li>
+            <li class="sprite-right"></li>
+        </ul>
+    </div>
+</div>
+
+                <!-- container -->
+                <div id="container">
+                    <div class="wraperCon homeCon">
+                        <div class="wraperConArea clearFix">
+                            <div class="homeConMain">
+                                <div class="homeConMain-top">
+                                    <div id="eye">
+                                        
+                                            <div class="eye_wraper">
+                                                <ul class="eye_pic clearFix">
+                                                    
+                                                        
+                                                            <li><img src="http://hearthstone.nos.netease.com/a/images/2018/7/11/a095618978992610127defb1cfb6632e.jpg" alt="全新扩展包“砰砰计划”现已公布"
+                                                                    width="640"></li>
+                                                            
+                                                            <li><img src="http://heroes.nos.netease.com/a/images/2018/7/20/910d0d3969ba18dbeb243da2f36d3818.jpg" alt="7月24日18:00 啦啦啦VS春哥"
+                                                                    width="640"></li>
+                                                            
+                                                            <li><img src="http://hearthstone.nos.netease.com/a/images/2018/7/20/336cbde58c19d341a5a5d25d487afc6e.jpg" alt="《暴雪游戏铁人五项》7月20日震撼开播"
+                                                                    width="640"></li>
+                                                            
+                                                                
+                                                </ul>
+                                            </div>
+                                            <ul class="eye_link">
+                                                
+                                                    
+                                                        
+                                                            <li class="active"><a href="http://hs.blizzard.cn/article/16/13504" target="_blank"></a></li>
+                                                            
+                                                                    
+                                                        
+                                                                <li><a href="http://hs.blizzard.cn/article/20/13618" target="_blank"></a></li>
+                                                                
+                                                                    
+                                                        
+                                                                <li><a href="http://esports.blizzard.cn/minisite/bgp/" target="_blank"></a></li>
+                                                                
+                                                                    
+                                                                        
+                                            </ul>
+                                            <ul class="eye_small">
+                                                
+                                                    
+                                                        
+                                                            <li class="active"><a href="javascript:void(0);"><img src="http://hearthstone.nos.netease.com/a/images/2018/7/11/a095618978992610127defb1cfb6632e.jpg" alt="全新扩展包“砰砰计划”现已公布" width="62"></a></li>
+                                                            
+                                                                    
+                                                        
+                                                                <li><a href="javascript:void(0);"><img src="http://heroes.nos.netease.com/a/images/2018/7/20/910d0d3969ba18dbeb243da2f36d3818.jpg" alt="7月24日18:00 啦啦啦VS春哥" width="62"></a></li>
+                                                                
+                                                                    
+                                                        
+                                                                <li><a href="javascript:void(0);"><img src="http://hearthstone.nos.netease.com/a/images/2018/7/20/336cbde58c19d341a5a5d25d487afc6e.jpg" alt="《暴雪游戏铁人五项》7月20日震撼开播" width="62"></a></li>
+                                                                
+                                                                    
+                                                                        
+                                            </ul>
+                                            <ul class="txtList">
+                                                
+                                                    
+                                                        
+                                                            <li class="active">
+                                                                全新扩展包“砰砰计划”现已公布                                                            </li>
+                                                            
+                                                                    
+                                                        
+                                                                <li>
+                                                                    7月24日18:00 啦啦啦VS春哥                                                                </li>
+                                                                
+                                                                    
+                                                        
+                                                                <li>
+                                                                    《暴雪游戏铁人五项》7月20日震撼开播                                                                </li>
+                                                                
+                                                                    
+                                                                        
+                                            </ul>
+                                    </div>
+                                    <ul class="videoEye clearFix">
+                                        
+                                            
+                                                
+                                                    
+                                                        
+                                                            <li class="videoEyeFirst">
+                                                                
+                                                                            <a href="http://hs.blizzard.cn/gameguide/cards/?cardset=the-boomsday-project" target="_blank">
+                                                        <img src="http://hearthstone.nos.netease.com/a/images/2018/7/19/980fc28dd335695b989f863f825f586f.jpg" alt="">
+                                                    </a>
+                                                                            <p>
+                                                                                “砰砰计划”已公布卡牌一览                                                                            </p>
+                                                                    </li>
+                                                                    
+                                                                        
+                                                    
+                                                        
+                                                                    <li>
+                                                                        
+                                                                            <a href="https://shop.battlenet.com.cn/zh-cn/product/hearthstone-boomsday-project-cn?utm_campaign=marketing-global-booomsday&utm_source=app-play&utm_medium=internal&utm_content=hstabprepurchase" target="_blank">
+                                                        <img src="http://hearthstone.nos.netease.com/a/images/2018/7/11/d58f93f8e1a4039e3e8529187d32f468.jpg" alt="">
+                                                    </a>
+                                                                            <p>
+                                                                                预购“砰砰计划”奥术之尘礼包                                                                            </p>
+                                                                    </li>
+                                                                    
+                                                                        
+                                                    
+                                                                        
+                                                    
+                                                                        
+                                                    
+                                                                        
+                                                    
+                                                                        
+                                                    
+                                                                        
+                                                    
+                                                                        
+                                                    
+                                                                        
+                                                    
+                                                                        
+                                                                            
+                                    </ul>
+                                    <div class="homeNews">
+                                        
+                                            
+                                                
+                                                    
+                                                        
+                                                            <div class="homeNewsWrap homeNewsWrapF" topic-key="A-13664" data-type="1">
+                                                                
+                                                                            
+                                                                                        <a class="homeNewsItem" href="/article/20/13664" target="_blank">
+                                                                                            
+                                                                                                <img src="http://hearthstone.nos.netease.com/a/images/2018/7/24/454a9b045a9271b6a67c65770f5860c4.jpg" alt="黄金公开赛西安站7月27日开启报名" width="200" height="100">
+                                                                                                <h4>
+                                                                                                    黄金公开赛西安站7月27日开启报名
+                                                                                                </h4>
+                                                                                                <p class="homeNewsIntro">
+                                                                                                    黄金公开赛西安站将于8月24日-8月26日在西安W酒店风华厅举行，报名将于7月27日开启。
+                                                                                                </p>
+                                                                                        </a>
+
+                                                                                        <p class="homeNewsComment">
+                                                                                            
+                                                                                                <span class="comments"></span>
+                                                                                                
+                                                                                                    <span class="time">2018-07-24</span>
+                                                                                        </p>
+                                                                    </div>
+                                                                    
+                                                                        
+                                                    
+                                                        
+                                                                    <div class="homeNewsWrap" topic-key="A-13663" data-type="5">
+                                                                        
+                                                                            
+                                                                                <a class="homeNewsItem" href="https://www.wowchina.com/zh-cn/news/17531424" target="_blank">
+                                                                                    
+                                                                                                <img src="http://hearthstone.nos.netease.com/a/images/2018/7/24/6672ec18097849ea11bbd6f46e547ad3.jpg" alt="来ChinaJoy暴雪展台 抢先体验魔兽、炉石全新版本" width="200" height="100">
+                                                                                                <h4>
+                                                                                                    来ChinaJoy暴雪展台 抢先体验魔兽、炉石全新版本
+                                                                                                </h4>
+                                                                                                <p class="homeNewsIntro">
+                                                                                                    想抢先体验《魔兽世界》和《炉石传说》全新版本吗？那你一定不能错过今年ChinaJoy的暴雪展台！
+                                                                                                </p>
+                                                                                        </a>
+
+                                                                                        <p class="homeNewsComment">
+                                                                                            
+                                                                                                <span class="comments"></span>
+                                                                                                
+                                                                                                    <span class="time">2018-07-24</span>
+                                                                                        </p>
+                                                                    </div>
+                                                                    
+                                                                        
+                                                    
+                                                        
+                                                                    <div class="homeNewsWrap" topic-key="A-13658" data-type="1">
+                                                                        
+                                                                            
+                                                                                        <a class="homeNewsItem" href="/article/16/13658" target="_blank">
+                                                                                            
+                                                                                                <img src="http://hearthstone.nos.netease.com/a/images/2018/7/24/96dfae1c6aad77c9bf4328c6b919a7ed.jpg" alt="“砰砰计划”漫画——《砰砰博士：劲爆登场》" width="200" height="100">
+                                                                                                <h4>
+                                                                                                    “砰砰计划”漫画——《砰砰博士：劲爆登场》
+                                                                                                </h4>
+                                                                                                <p class="homeNewsIntro">
+                                                                                                    砰砰博士正在和他的小跟班巡视实验室，快跟上他们。
+                                                                                                </p>
+                                                                                        </a>
+
+                                                                                        <p class="homeNewsComment">
+                                                                                            
+                                                                                                <span class="comments"></span>
+                                                                                                
+                                                                                                    <span class="time">2018-07-24</span>
+                                                                                        </p>
+                                                                    </div>
+                                                                    
+                                                                        
+                                                    
+                                                        
+                                                                    <div class="homeNewsWrap" topic-key="A-13646" data-type="1">
+                                                                        
+                                                                            
+                                                                                        <a class="homeNewsItem" href="/article/16/13646" target="_blank">
+                                                                                            
+                                                                                                <img src="http://hearthstone.nos.netease.com/a/images/2018/7/24/118f6998f25e25d0bcf7174d669cac93.jpg" alt="砰砰计划：实验室日志第二部分" width="200" height="100">
+                                                                                                <h4>
+                                                                                                    砰砰计划：实验室日志第二部分
+                                                                                                </h4>
+                                                                                                <p class="homeNewsIntro">
+                                                                                                    LUM1，我的机械乖乖，去坎格尔和迈拉那儿看看“砰砰计划”的进展怎么样了。
+                                                                                                </p>
+                                                                                        </a>
+
+                                                                                        <p class="homeNewsComment">
+                                                                                            
+                                                                                                <span class="comments"></span>
+                                                                                                
+                                                                                                    <span class="time">2018-07-24</span>
+                                                                                        </p>
+                                                                    </div>
+                                                                    
+                                                                        
+                                                    
+                                                        
+                                                                    <div class="homeNewsWrap" topic-key="A-13640" data-type="5">
+                                                                        
+                                                                            
+                                                                                <a class="homeNewsItem" href="http://heroes.blizzard.cn/article/esports/9003" target="_blank">
+                                                                                    
+                                                                                                <img src="http://heroes.nos.netease.com/a/images/2018/7/6/4b12c818729674aa7ae88e7f98ba6df8.jpg" alt="《暴雪游戏铁人五项》第二季第三集7月27日播出" width="200" height="100">
+                                                                                                <h4>
+                                                                                                    《暴雪游戏铁人五项》第二季第三集7月27日播出
+                                                                                                </h4>
+                                                                                                <p class="homeNewsIntro">
+                                                                                                    在第二期节目中两支队伍展开了精彩的对抗，最终小闲战队5:4险胜F91战队。
+                                                                                                </p>
+                                                                                        </a>
+
+                                                                                        <p class="homeNewsComment">
+                                                                                            
+                                                                                                <span class="comments"></span>
+                                                                                                
+                                                                                                    <span class="time">2018-07-22</span>
+                                                                                        </p>
+                                                                    </div>
+                                                                    
+                                                                        
+                                                    
+                                                        
+                                                                    <div class="homeNewsWrap" topic-key="A-13635" data-type="1">
+                                                                        
+                                                                            
+                                                                                        <a class="homeNewsItem" href="/article/16/13635" target="_blank">
+                                                                                            
+                                                                                                <img src="http://hearthstone.nos.netease.com/a/images/2018/7/20/6212dbb1bcf0ddf3be60f8167d2a89c8.jpg" alt="开发者访谈：12.0游戏机制更新" width="200" height="100">
+                                                                                                <h4>
+                                                                                                    开发者访谈：12.0游戏机制更新
+                                                                                                </h4>
+                                                                                                <p class="homeNewsIntro">
+                                                                                                    随着“砰砰计划”的上线，《炉石传说》将迎来部分规则改动。一起来了解更多信息吧！
+                                                                                                </p>
+                                                                                        </a>
+
+                                                                                        <p class="homeNewsComment">
+                                                                                            
+                                                                                                <span class="comments"></span>
+                                                                                                
+                                                                                                    <span class="time">2018-07-21</span>
+                                                                                        </p>
+                                                                    </div>
+                                                                    
+                                                                        
+                                                    
+                                                        
+                                                                    <div class="homeNewsWrap" topic-key="A-13638" data-type="1">
+                                                                        
+                                                                            
+                                                                                        <a class="homeNewsItem" href="/article/20/13638" target="_blank">
+                                                                                            
+                                                                                                <img src="http://hearthstone.nos.netease.com/a/images/2017/8/4/hs_jjc_banner_84_260130.jpg" alt="2018年竞技模式六月胜率排行榜" width="200" height="100">
+                                                                                                <h4>
+                                                                                                    2018年竞技模式六月胜率排行榜
+                                                                                                </h4>
+                                                                                                <p class="homeNewsIntro">
+                                                                                                    2018年《炉石传说》竞技模式六月胜率排名榜单出炉，一起来看看这些在竞技场中发挥出色的玩家。
+                                                                                                </p>
+                                                                                        </a>
+
+                                                                                        <p class="homeNewsComment">
+                                                                                            
+                                                                                                <span class="comments"></span>
+                                                                                                
+                                                                                                    <span class="time">2018-07-20</span>
+                                                                                        </p>
+                                                                    </div>
+                                                                    
+                                                                        
+                                                    
+                                                        
+                                                                    <div class="homeNewsWrap" topic-key="A-13637" data-type="1">
+                                                                        
+                                                                            
+                                                                                        <a class="homeNewsItem" href="/article/31/13637" target="_blank">
+                                                                                            
+                                                                                                <img src="http://hearthstone.nos.netease.com/1/zz/201703/17wild260x130.jpg" alt="2018年排名对战六月赛季狂野模式排行榜" width="200" height="100">
+                                                                                                <h4>
+                                                                                                    2018年排名对战六月赛季狂野模式排行榜
+                                                                                                </h4>
+                                                                                                <p class="homeNewsIntro">
+                                                                                                    2018年《炉石传说》排名对战六月赛季狂野模式的最终排名已经出炉！祝贺排名榜单上的玩家！
+                                                                                                </p>
+                                                                                        </a>
+
+                                                                                        <p class="homeNewsComment">
+                                                                                            
+                                                                                                <span class="comments"></span>
+                                                                                                
+                                                                                                    <span class="time">2018-07-20</span>
+                                                                                        </p>
+                                                                    </div>
+                                                                    
+                                                                        
+                                                    
+                                                        
+                                                                    <div class="homeNewsWrap" topic-key="A-13636" data-type="1">
+                                                                        
+                                                                            
+                                                                                        <a class="homeNewsItem" href="/article/31/13636" target="_blank">
+                                                                                            
+                                                                                                <img src="http://hearthstone.nos.netease.com/1/zz/201702/16rank260x130.jpg" alt="2018年排名对战六月赛季标准模式排行榜" width="200" height="100">
+                                                                                                <h4>
+                                                                                                    2018年排名对战六月赛季标准模式排行榜
+                                                                                                </h4>
+                                                                                                <p class="homeNewsIntro">
+                                                                                                    2018年《炉石传说》排名对战六月赛季标准模式的最终排名已经出炉！祝贺排名榜单上的玩家！
+                                                                                                </p>
+                                                                                        </a>
+
+                                                                                        <p class="homeNewsComment">
+                                                                                            
+                                                                                                <span class="comments"></span>
+                                                                                                
+                                                                                                    <span class="time">2018-07-20</span>
+                                                                                        </p>
+                                                                    </div>
+                                                                    
+                                                                        
+                                                    
+                                                        
+                                                                    <div class="homeNewsWrap" topic-key="A-13630" data-type="1">
+                                                                        
+                                                                            
+                                                                                        <a class="homeNewsItem" href="/article/20/13630" target="_blank">
+                                                                                            
+                                                                                                <img src="http://hearthstone.nos.netease.com/a/images/2018/7/20/a88b51b14587a52eb0f343c7a558ef77.jpg" alt="“砰砰计划”全新卡牌卡揭晓在即" width="200" height="100">
+                                                                                                <h4>
+                                                                                                    “砰砰计划”全新卡牌卡揭晓在即
+                                                                                                </h4>
+                                                                                                <p class="homeNewsIntro">
+                                                                                                    从7月24日起，我们会和《炉石传说》的多位主播一起揭晓全新卡牌。
+                                                                                                </p>
+                                                                                        </a>
+
+                                                                                        <p class="homeNewsComment">
+                                                                                            
+                                                                                                <span class="comments"></span>
+                                                                                                
+                                                                                                    <span class="time">2018-07-20</span>
+                                                                                        </p>
+                                                                    </div>
+                                                                    
+                                                                        
+                                                    
+                                                        
+                                                                    <div class="homeNewsWrap" topic-key="A-13618" data-type="1">
+                                                                        
+                                                                            
+                                                                                        <a class="homeNewsItem" href="/article/20/13618" target="_blank">
+                                                                                            
+                                                                                                <img src="http://hearthstone.nos.netease.com/a/images/2018/7/19/531f74ba0fa26a30ea9ea1880f404ea7.jpg" alt="《黄金竞技场》啦啦啦气势归来挑战春哥" width="200" height="100">
+                                                                                                <h4>
+                                                                                                    《黄金竞技场》啦啦啦气势归来挑战春哥
+                                                                                                </h4>
+                                                                                                <p class="homeNewsIntro">
+                                                                                                    《黄金竞技场》第二季第二期7月24日起擂台再起，啦啦啦回归挑战春哥。
+                                                                                                </p>
+                                                                                        </a>
+
+                                                                                        <p class="homeNewsComment">
+                                                                                            
+                                                                                                <span class="comments"></span>
+                                                                                                
+                                                                                                    <span class="time">2018-07-20</span>
+                                                                                        </p>
+                                                                    </div>
+                                                                    
+                                                                        
+                                                    
+                                                        
+                                                                    <div class="homeNewsWrap" topic-key="A-13616" data-type="1">
+                                                                        
+                                                                            
+                                                                                        <a class="homeNewsItem" href="/article/16/13616" target="_blank">
+                                                                                            
+                                                                                                <img src="http://hearthstone.nos.netease.com/a/images/2018/7/19/cc525b270c64b3559d2fb0f10eaae7aa.png" alt="炉边闲谈：砰砰实验室" width="200" height="100">
+                                                                                                <h4>
+                                                                                                    炉边闲谈：砰砰实验室
+                                                                                                </h4>
+                                                                                                <p class="homeNewsIntro">
+                                                                                                    《炉石传说》设计师Peter Whalen将与大家分享奇妙的古怪科学。
+                                                                                                </p>
+                                                                                        </a>
+
+                                                                                        <p class="homeNewsComment">
+                                                                                            
+                                                                                                <span class="comments"></span>
+                                                                                                
+                                                                                                    <span class="time">2018-07-20</span>
+                                                                                        </p>
+                                                                    </div>
+                                                                    
+                                                                        
+                                                    
+                                                        
+                                                                    <div class="homeNewsWrap" topic-key="A-13615" data-type="1">
+                                                                        
+                                                                            
+                                                                                        <a class="homeNewsItem" href="/article/20/13615" target="_blank">
+                                                                                            
+                                                                                                <img src="http://hearthstone.nos.netease.com/a/images/2018/7/12/ad7d9b9278017ec75734378bdb4d34a4.jpg" alt="向嘉年华进军！7月21日全民实力赛夏季赛打响" width="200" height="100">
+                                                                                                <h4>
+                                                                                                    向嘉年华进军！7月21日全民实力赛夏季赛打响
+                                                                                                </h4>
+                                                                                                <p class="homeNewsIntro">
+                                                                                                    2018全民实力赛夏季赛《炉石传说》第一周的比赛将于7月21日在10个城市同时开启。
+                                                                                                </p>
+                                                                                        </a>
+
+                                                                                        <p class="homeNewsComment">
+                                                                                            
+                                                                                                <span class="comments"></span>
+                                                                                                
+                                                                                                    <span class="time">2018-07-19</span>
+                                                                                        </p>
+                                                                    </div>
+                                                                    
+                                                                        
+                                                    
+                                                                        
+                                                    
+                                                                        
+                                                    
+                                                                        
+                                                    
+                                                                        
+                                                    
+                                                                        
+                                                    
+                                                                        
+                                                    
+                                                                        
+                                                                            
+                                                            </div>
+                                                            <div class="homeShowMore">
+                                                                <div class="newsMore">
+                                                                    <a class="borderLink" href="/news?new">更多新闻</a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="homeConMain-bot"></div>
+                                    </div>
+                                </div>
+                                <!--首页右侧开始-->
+                                <div class="homeConBar">
+                                    <div class="features">
+                                        <!--新版预告和下载开始-->
+                                        <a href="/gameguide/the-boomsday-project/" target="_blank" class="logo"></a>
+                                        <!-- <div class="snow-logo"></div> -->
+                                        <div class="download">
+                                            <ul class="deviceIcon clearFix">
+                                                <li>
+                                                    <a href="javascript:void(0);" class="pc active" data-url="http://www.battlenet.com.cn/download/getInstallerForGame?os=win&locale=zhCN&version=LIVE&gameProgram=HEARTHSTONE 
+                                        "></a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);" class="ios" data-url="https://itunes.apple.com/cn/app/lu-shi-chuan-shuo-mo-shou/id841140063?mt=8&ign-mpt=uo%3D4"><img src="http://hearthstone.nos.netease.com/3/home/ewm.jpg" /></a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);" class="android" data-url="/download/"><img src="http://hearthstone.nos.netease.com/3/download/1498818557.png"/></a>
+                                                </li>
+                                            </ul>
+                                            <a href="http://www.battlenet.com.cn/download/getInstallerForGame?os=win&locale=zhCN&version=LIVE&gameProgram=HEARTHSTONE"
+                                                target="_blank" class="clientDownload pcClient"></a>
+                                            <!-- <div id="flashBox">
+                                        <div id="downloadFlash"></div>
+                                    </div> -->
+                                            <video id="flashBox" autoplay="autoplay" loop="true" preload="auto" width="220" height="60">
+                                                <source src="http://hearthstone.nos.netease.com/3/home/20151115/home_download_btn.webm" type="video/webm">
+                                                <source src="http://hearthstone.nos.netease.com/3/home/20151115/home_download_btn.mp4" type="video/mp4">
+                                            </video>
+                                            <div class="downloadBtn">
+                                            </div>
+                                        </div>
+                                        <div class="wyw-icon"></div>
+
+                                    </div>
+                                    <!--新版预告和下载结束-->
+                                    <!--论坛热帖开始-->
+                                    <div class="dragWrapper">
+                                        <div class="rightModule module_media">
+                                            <div class="rightModuleSub">
+                                                <div class="dragBtn"></div>
+                                                <div class="mid">
+                                                    <div class="top">
+                                                        <div class="bot">
+                                                            <h3><span class="iconCommon iconZh"></span>电竞赛事</h3>
+                                                            <div class="esport">
+                                                                <div class="esportCon">
+                                                                    <ul class="eye_pic">
+                                                                        <li><img src="http://hearthstone.nos.netease.com/3/common/loading.gif"
+                                                                                class="loading" /></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <a href="javascript:void(0);" class="prev"></a>
+                                                                <a href="javascript:void(0);" class="next"></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--精彩视频开始-->
+                                        <div class="rightModule module_media" rel="media">
+                                            <div class="rightModuleSub">
+                                                <div class="dragBtn"></div>
+                                                <div class="mid">
+                                                    <div class="top">
+                                                        <div class="bot">
+                                                            <h3><span class="iconCommon iconZh"></span>游戏直播</h3>
+                                                            <div class="videoBox">
+                                                                <!-- 如果调用视频，直接到home.js注释打开 -->
+                                                                <a href="https://hs.blizzard.cn/article/98/2493 " class="playBtn" target="_blank"></a>
+                                                                <img src="http://hearthstone.nos.netease.com/3/home/v5/live.jpg" alt="">
+                                                                <span class="over"></span>
+                                                            </div>
+                                                            <!-- <a target="_blank" class="moreBtn" href="/media/">查看更多</a> -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--精彩视频结束-->
+                                        <!--媒体推荐开始-->
+                                        <div class="rightModule module_recommend clearFix" rel="recommend">
+                                            <div class="rightModuleSub">
+                                                <div class="dragBtn"></div>
+                                                <div class="mid">
+                                                    <div class="top">
+                                                        <div class="bot">
+                                                            <h3><span class="iconCommon iconMt"></span>媒体推荐</a>
+                                                            </h3>
+                                                            <ul class="bbsList mediaRec clearFix">
+                                                                
+                                                                    
+                                                                        
+                                                                            
+                                                                                
+                                                                                        <li><a href="/article/98/2493"
+                                                                                                target="_blank" title="《炉石传说》直播汇总"><span class="iconCommon iconSmallArrow"></span><span class="mediaSource">【本周直播】</span><span class="mTitle">《炉石传说》直播汇总</span></a></li>
+                                                                                        
+                                                                                            
+                                                                                                
+                                                                            
+                                                                                
+                                                                                        <li><a href="/article/98/9218"
+                                                                                                target="_blank" title="“女巫森林”社区媒体活动"><span class="iconCommon iconSmallArrow"></span><span class="mediaSource">【活动】</span><span class="mTitle">“女巫森林”社区媒体活动</span></a></li>
+                                                                                        
+                                                                                            
+                                                                                                
+                                                                            
+                                                                                
+                                                                                        <li><a href="/article/98/12872"
+                                                                                                target="_blank" title="主播点评“女巫森林”卡牌"><span class="iconCommon iconSmallArrow"></span><span class="mediaSource">【媒体推荐】</span><span class="mTitle">主播点评“女巫森林”卡牌</span></a></li>
+                                                                                        
+                                                                                            
+                                                                                                
+                                                                            
+                                                                                
+                                                                                        <li><a href="/article/98/12061"
+                                                                                                target="_blank" title="元旦特辑：九职业大作战"><span class="iconCommon iconSmallArrow"></span><span class="mediaSource">【斗鱼】</span><span class="mTitle">元旦特辑：九职业大作战</span></a></li>
+                                                                                        
+                                                                                            
+                                                                                                
+                                                                            
+                                                                                                
+                                                                            
+                                                                                                
+                                                                            
+                                                                                                
+                                                                            
+                                                                                                
+                                                                            
+                                                                                                
+                                                                            
+                                                                                                
+                                                                                                    
+                                                            </ul>
+                                                            <a class="moreBtn" href="/news?media#news" target="_blank">查看更多</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--媒体推荐结束-->
+                                        <!--第三方赛事开始-->
+                                        <div class="rightModule module_events clearFix" rel="events">
+                                            <div class="rightModuleSub">
+                                                <div class="dragBtn"></div>
+                                                <div class="mid">
+                                                    <div class="top">
+                                                        <div class="bot">
+                                                            <h3><span class="iconCommon iconTj"></span>第三方赛事推荐</a>
+                                                            </h3>
+                                                            <ul class="bbsList mediaRec clearFix">
+                                                                
+                                                                    
+                                                                        
+                                                                            
+                                                                                
+                                                                                        <li><a href="/article/124/12993"
+                                                                                                target="_blank" title="熊猫炉石天梯接力赛第二季"><span class="iconCommon iconSmallArrow"></span><span class="mTitle">熊猫炉石天梯接力赛第二季</span></a></li>
+                                                                                        
+                                                                                            
+                                                                                                
+                                                                            
+                                                                                
+                                                                                        <li><a href="/article/124/12276"
+                                                                                                target="_blank" title="熊猫炉石天梯接力赛1月27日开始"><span class="iconCommon iconSmallArrow"></span><span class="mTitle">熊猫炉石天梯接力赛1月27日开始</span></a></li>
+                                                                                        
+                                                                                            
+                                                                                                
+                                                                            
+                                                                                
+                                                                                        <li><a href="/article/124/11097"
+                                                                                                target="_blank" title="斗鱼十一天梯竞速赛"><span class="iconCommon iconSmallArrow"></span><span class="mTitle">斗鱼十一天梯竞速赛</span></a></li>
+                                                                                        
+                                                                                            
+                                                                                                
+                                                                            
+                                                                                
+                                                                                        <li><a href="/article/124/9924"
+                                                                                                target="_blank" title="斗鱼天梯24小时马拉松活动即将开启"><span class="iconCommon iconSmallArrow"></span><span class="mTitle">斗鱼天梯24小时马拉松活动即将开启</span></a></li>
+                                                                                        
+                                                                                            
+                                                                                                
+                                                                            
+                                                                                                
+                                                                            
+                                                                                                
+                                                                            
+                                                                                                
+                                                                            
+                                                                                                
+                                                                            
+                                                                                                
+                                                                            
+                                                                                                
+                                                                                                    
+                                                                                                        <li><a href="/article/124/9270"
+                                                                                                                target="_blank"
+                                                                                                                title="《炉石大冒险》第三期"><span class="iconCommon iconSmallArrow"></span><span class="mTitle">《炉石大冒险》第三期</span></a></li>
+                                                            </ul>
+                                                            <a target="_blank" class="moreBtn" href="/news?match#news">查看更多</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--第三方赛事结束-->
+                                        <div class="rightModule-normal module_normal" rel="normal">
+                                                <div class="subModule">
+                                                        <div class="text">
+                                                            <h4>充值指引</h4>
+                                                        </div>
+                                                        <a href="/pay/" class="icon guide" target="_blank"></a>
+                                                    </div>
+                                                    <div class="subModule tmall">
+                                                            <div class="text">
+                                                                <h4>官方充值旗舰店(天猫)</h4>
+                                                                <p>blz.tmall.com</p>
+                                                            </div>
+                                                            <a href="http://blz.tmall.com" class="icon tmallIcon" target="_blank"></a>
+                                                        </div>
+                                                        <div class="subModule reward">
+                                                                <div class="text">
+                                                                    <h4>积分奖励系统</h4>
+                                                                    <p>reward.battlenet.com.cn</p>
+                                                                </div>
+                                                                <a href="http://reward.battlenet.com.cn/" class="icon rewardIcon" target="_blank"></a>
+                                                            </div>
+                                                            <div class="subModule">
+                                                                    <div class="text">
+                                                                        <h4>随身炉石App</h4>
+                                                                    </div>
+                                                                    <a href="https://hs.blizzard.cn/minisite/appsite" class="icon appsite" target="_blank"></a>
+                                                                </div>
+
+
+                                            <div class="subModule services">
+                                                <div class="text">
+                                                    <h4>暴雪游戏安全中心</h4>
+                                                </div>
+                                                <a href="http://wow.blizzard.cn/services/security/" class="icon services-icon" target="_blank"></a>
+                                            </div>                                          
+                                            
+                                            <div class="subModule sccn">
+                                                    <div class="text">
+                                                        <h4>暴雪游戏服务中心</h4>
+                                                    </div>
+                                                    <a href="javascript:;" class="icon sccn-icon"></a>
+                                                    <img src="https://hearthstone.nosdn.127.net/3/v2015/home/qrcode.jpg" class="qrcode">
+                                                </div>
+                                            
+                                            <!-- <div class="subModule blz">
+                                                        <div class="text">
+                                                            <h4>第十届暴雪嘉年华</h4>
+                                                            <p>暴雪25周年庆典</p>
+                                                        </div>
+                                                        <a href="http://blizzcon.blizzard.cn/" class="icon blzIcon" target="_blank"></a>
+                                                    </div> -->
+                                            <div class="subModule bmall">
+                                                <div class="text">
+                                                    <h4>官方周边商城</h4>
+                                                    <p>bmall.163.com</p>
+                                                </div>
+                                                <a href="http://bmall.163.com/" class="icon bmallIcon" target="_blank"></a>
+                                            </div>
+                                            
+                                            
+                                            <div class="subModule joinUs">
+                                                <div class="text">
+                                                    <h4>加入我们</h4>
+                                                    <p>wangzhiyi.zhiye.com</p>
+                                                </div>
+                                                <a href="http://wangzhiyi.zhiye.com" class="icon joinUsIcon" target="_blank" onclick='neteaseTracker(false, "https://hs.blizzard.cn/home/joinus", "招聘", "hs9click");'></a>
+                                            </div>
+                                            <!-- <div class="subModule partner">
+                                                        <div class="text">
+                                                            <h4>商务合作伙伴</h4>
+                                                        </div>
+                                                        <a href="mailto:business@battlenet.com.cn" class="apply">申请合作</a>
+                                                        <div class="communityJoinMedia">
+                                                            <ul class="eye_pic">
+                                                                <li><a class="img" href="http://cn.razerzone.com/" target="_blank"><img src="http://hearthstone.nos.netease.com/3/v2015/logo/logo_razer.jpg" alt="razer"></a></li>
+                                                                <li><a class="img" href="http://samsung.myamd.net/" target="_blank"><img src="http://hearthstone.nos.netease.com/3/v2015/logo/logo_amd.jpg" alt="amd"></a></li>
+                                                                <li><a class="img" href="http://www.asus.com.cn/" target="_blank"><img src="http://hearthstone.nos.netease.com/3/v2015/logo/logo_asus.jpg" alt="asus"></a></li>
+                                                            </ul>
+                                                            <a href="javascript:void(0);" class="prev"></a>
+                                                            <a href="javascript:void(0);" class="next"></a>
+                                                        </div>
+                                                    </div>-->
+                                        </div>
+                                        <!--互动社区开始-->
+                                        <div class="rightModule module_sns" rel="sns">
+                                            <div class="rightModuleSub">
+                                                <div class="dragBtn"></div>
+                                                <div class="mid">
+                                                    <div class="top">
+                                                        <div class="bot">
+                                                            <h3><span class="iconCommon iconChui"></span>互动社区</h3>
+                                                            <ul class="comm_share clearFix">
+                                                                <li class="weixin borderR" class="">
+                                                                    <span class="bds_button_weixin_icon"></span>
+                                                                    <a href="javascript:void(0)" class="bds_button_weixin bds_tip weixin_dy">
+                                                                <em class="thumb_op5">
+                                                                                <img width="92" src="http://hearthstone.nos.netease.com/3/v2015/layout/weixin_dingyue.jpg" alt="">
+                                                                                </em> 微信
+                                                                <i>订阅号</i>
+                                                            </a>
+                                                                    <a href="javascript:void(0)" class="bds_button_weixin bds_tip weixin_fw">
+                                                                <em class="thumb_op5">
+                                                                                <img width="92" src="http://hearthstone.nos.netease.com/3/v2015/layout/weixin_fuwu.jpg" alt="">
+                                                                                </em> 微信
+                                                                <i>服务号</i>
+                                                            </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="http://weibo.com/playhearthstone" class="bds_button_tsina" target="_blank">
+                                                                <span></span> 新浪微博
+                                                            </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0)" class="bds_button_webapp bds_tip">
+                                                                <span></span>
+                                                                <em class="thumb_op5">
+                                                                                <img width="92" height="92" src="http://hearthstone.nos.netease.com/3/v2015/layout/code_webapp.jpg" alt="">
+                                                                                </em> 手机版官网
+                                                            </a>
+                                                                </li>
+                                                                <li class="borderR mail">
+                                                                    官方邮箱
+                                                                    <a href="mailto:hs@battlenet.com.cn" class="font-small">hs@battlenet.com.cn</a>
+                                                                </li>
+                                                                <li class="tel">
+                                                                    客服热线<b class="font-small">0571-28090163</b>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--互动社区结束-->
+                                    </div>
+                                    <div class="homeConBar-bot"></div>
+                                </div>
+                                <!-- homeConBar -->
+                            </div>
+                            <!-- wraperConArea -->
+                        </div>
+                        <!-- wraperCon -->
+                    </div>
+                    <!-- container -->
+                </div>
+            </div>
+            <!-- wraper -->
+            <script src="/js/features.min.js"></script>
+<script src="https://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script type="text/javascript" src="https://fs.bnet.163.com/js/??module/base.js,module/login.js,module/navbar.js,wx_share.1.0.1.js,vendor/parallax.js,module/footer.js?t=1532331901444"></script>
+
+            <script type="text/javascript" src="/js/1b58ff1e.jquery.imgpreload.js"></script>
+            <script type="text/javascript" src="/js/3de63e62.jquery.hSlider.js"></script>
+            <script type="text/javascript" src="/js/512ad6bd.jquery.draggable.js"></script>
+            <script type="text/javascript" src="/js/29d73938.jquery.droppable.js"></script>
+            <script type="text/javascript" src="/js/af33fdd3.home.js"></script>
+            <script>
+                $(document).ready(function () {
+                    Common.init();
+                    Common.setWxShare();
+                    Common.getTopicKey('list', '.homeNewsWrap', '.homeNewsItem', '.comments', 'news');
+                    // Common.scrollInit();
+                    Home.init();
+                    $("#sidebar").fixed({
+                        "marginTop": 20
+                    });
+                    $.sc2.scrollTo({
+                        trigger: "#gotop"
+                    });
+                    Login.setLogin("hs", ".service-welcome", "#a_login");
+                    $(".communityJoinMedia img").imgpreload(function () {
+                        $(".communityJoinMedia").hSlider({
+                            speed: 5000
+                        });
+                    })
+                });
+            </script>
+            <script language="JavaScript">
+                function rand(num) {
+                    return Math.floor(Math.random() * num) + 1;
+                }
+                document.write("<iframe style=\"display:none\" src=\"https://gad.netease.com/gad/point?point_id=1329&s=kWdK6VrRMDTrVSRNaoKSlNdEpkg%3D&cache=" + rand(9999999) + "\" width=\"0\" height=\"0\"><\/iframe>");
+            </script>
+            		<!-- START NetEase Devilfish 2006 -->
+			<script src="https://analytics.163.com/ntes.js" type="text/javascript"></script>
+			<script type="text/javascript">
+			_ntes_nacc = "hs9";
+			neteaseTracker();
+			neteaseClickStat();
+			</script>
+
+		<!-- END NetEase Devilfish 2006 -->
+
+
+    </body>
+
+</html>

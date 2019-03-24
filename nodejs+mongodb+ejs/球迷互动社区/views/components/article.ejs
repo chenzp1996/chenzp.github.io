@@ -1,0 +1,32 @@
+<div class="row">
+<!-- 头像 -->
+    <div class="col-sm-1 col-sm-offset-2 profile">
+        <a href="/index?author=<%= post.author._id %>" data-toggle="popover" title="<%= post.author.username %>" data-content="<%= post.author.portray %>"
+            data-placement="bottom">
+            <img src="/uploads/<%= post.author.avatar%>" class="img-responsive img-circle">
+        </a>
+    </div>
+<!-- 文章 -->
+    <div class="panel panel-default col-sm-6">
+        <div class="panel-heading articleTitle">
+            <a href="/post/<%= post._id %>"><%= post.title %></a>
+            <!-- 判断是否文章本人 -->
+            <% if (user && user._id == post.author._id) { %>
+            <a href="" class="glyphicon glyphicon-option-horizontal dropdown-toggle pull-right" data-toggle="dropdown" style="text-decoration:none"></a>
+            <ul class="dropdown-menu dropdown-menu-top pull-right" style="top:46px">
+                <li><a href="/post/<%= post._id %>/edit">编辑</a></li>
+                <li><a href="/post/<%= post._id %>/delete">删除</a></li>
+            </ul>           
+            <% } %>
+        </div>
+        <div class="panel-body">
+            <div class="articleContent" name="content" rows="12" placeholder="Article Content">
+                <%= post.content %>
+            </div>
+        </div>
+        <div class="panel-footer">
+            <span class="createTime">发布时间:<%= post.createTime.toLocaleString() %></span>
+            <span class="comments pull-right">留言(<%= post.comments %>)</span>
+            <span class="readCount pull-right">浏览次数(<%= post.readCount%>)</span>
+        </div>
+    </div>
