@@ -13,13 +13,13 @@
                             </a>
                         </van-col>
                         <van-col span="16" class="text-container">
-                            <a class="desc" :href="`/shop?shop_id=${item._id}`">
+                            <router-link class="desc" :to="{path:'/shop/detail',query:{shop_id:item._id}}">
                                 <h6 class="resName">{{item.name}}</h6>
-                                <p class="dist">￥{{item.avgPrice}}/人</p>
+                                <p class="avg-price">￥{{item.avgPrice}}/人</p>
                                 <div>
                                     <van-icon color="#FBBA2C" name="star" v-for="(item, index) in item.avgScore" :key="index"/>
                                 </div>
-                            </a>
+                            </router-link>
                         </van-col>
                     </van-row>
                     <p class="address"><van-icon color="RGB(130,191,252)" name="location" />地址：{{item.address}}</p>
@@ -64,6 +64,11 @@ export default {
         this.getShopData();
     },
     methods: {
+         getPage(){
+            //  :to="`/shop/detail?shop_id=${item._id}`"
+             this.$router.push ({ path: '/shop/detail/1111' })
+         },
+
         //使用vuex全局共享totalShopList
         getShopData(){
             this.$store.dispatch("setShopList");
@@ -126,7 +131,7 @@ export default {
         color: #333;
         display: inline-block;
     }
-    .dist{
+    .avg-price{
         font-size: 12px;
     }
 

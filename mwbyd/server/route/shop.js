@@ -32,20 +32,16 @@ router.get("/",(req,res)=>{
     // console.log('upload success')
 })
 
-// router.get('/:shop_id',(req,res)=>{
-//     console.log(11111111111)
-//     res.send(`${req.params.shop_id}`);
-//     // let data = ''
-//     //     // id = req.params.shop_id
-    
-//     // console.log(req.params.shop_id)
-//     // shopsModel.findById('',(err,result)=>{
-//     //     data={code:0,result};
-//     //     res.status(200),
-//     //     res.json(data)
-//     //     return 
-//     // });
-// })
+router.get('/detail',(req,res)=>{
+    let data = '',
+        id = req.query.shop_id;
+    shopsModel.findById(id,(err,result)=>{
+        data={code:0,result};
+        res.status(200),
+        res.json(data)
+        return 
+    });
+})
 
 // router.post("/",(req,res)=>{
 //     let data = ''; 

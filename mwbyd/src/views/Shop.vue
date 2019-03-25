@@ -11,26 +11,24 @@
             >
                 <van-icon name="location-o" slot="right" />
             </van-nav-bar>
-           
-            
+            <!-- 子路由list、detail出口 -->
+            <router-view/>
         </div>
     </div>
 </template>
  
 <script>
 import Vue from 'vue';
-import { getQueryFromUrl } from '../utils/commentTool.js';
 
 export default {
     name: '',
-    components:{
-        
-    },
+    
     data() {
         return {
             active: 0,
             value: '',
-            shopData:{}
+            imageURL: '../../static/img/index-shop/1.jpg',
+            shopList:[]
         };
     },
     props:{
@@ -43,29 +41,21 @@ export default {
         this.resList = function(){
             showWhich(value)
         }
-        this.getShopData();
+        // this.getShopData();
+        // console.log(this.shopList)
     },
     methods: {
-        onSearch(){
-            console.log('搜索店铺功能')
-        },
         
         goback(){
             this.$router.go(-1);
-            this.data.active = 0;
+            // this.data.active = 0;
         },
         onLocation(){
             console.log("定位功能")
         },
         getShopData(){
-            let shop_id = getQueryFromUrl('shop_id');
-            console.log(shop_id)
-            Vue.axios.get('/api/shop',{
-                params:{
-                    shop_id:''
-                }
-                }).then((res) => {
-                this.shopData = res.data.shopData;
+            Vue.axios.get('/api/shop').then((res) => {
+                this.shopList = res.data.shopList;
                 // console.log(this.shopList)
             })
         },

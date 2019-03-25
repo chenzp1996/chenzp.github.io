@@ -91,9 +91,7 @@ export default {
         }   
     },
     created() {
-        this.getShopData();
-        console.log(this.totalShopList)
-        
+        this.getShopData();    
     },
     mounted() {
         // this.getShopData();
@@ -114,7 +112,6 @@ export default {
             this.totalShopList.map( v=> {
                 if( v.grade === 1 ){
                     this.bannerScrollList.push(v);
-                    console.log(this.bannerScrollList)
                 }
             })
             
@@ -125,7 +122,6 @@ export default {
             this.totalShopList.map( v=> {
                 if( v.grade === 2 ){
                     this.remenList.push(v);
-                    console.log(this.remenList)
                 }
             })
         },
@@ -133,7 +129,6 @@ export default {
             this.totalShopList.map( v=> {
                 if( v.grade === 3 ){
                     this.jingxuanList.push(v);
-                    console.log(this.jingxuanList)
                 }
             })
         },

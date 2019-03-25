@@ -1,11 +1,13 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Index from '@/views/Index'
-import Shoplist from '@/views/Shoplist'
+import Shop from '@/views/Shop'
 import Order from '@/views/Order'
 import Home from '@/views/Home'
 import Register from '@/views/Register'
 import Login from '@/views/Login'
+import ShopDetail from '@/components/shop/Detail'
+import ShopList from '@/components/shop/List'
 
 Vue.use(Router)
 
@@ -24,8 +26,22 @@ export default new Router({
         {
             path: '/shop',
             name: 'Shop',
-            component: Shoplist,
+            component: Shop,
+            redirect:'/shop/list',
+            children: [
+                {
+                    name:"ShopList",
+                    path: 'list',
+                    component: ShopList,
+                },
+                {
+                    name:"ShopDetail",
+                    path: 'detail',
+                    component: ShopDetail,
+                },
+            ]
         },
+        
         {
             path: '/order',
             name: 'Order',

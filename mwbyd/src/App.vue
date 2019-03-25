@@ -21,7 +21,7 @@ export default {
     name: 'App',
     data() {
         return {
-            active : 0,
+            active : 0
         }
     },
     created() {
@@ -30,10 +30,10 @@ export default {
     methods: {
         getPage(path){
             switch(path){
-                case 'index': this.$router.push({ path: 'index' });break;
-                case 'shop': this.$router.push({ path: 'shop' });break;
-                case 'order': this.$router.push({ path: 'order' });break;
-                case 'home': this.$router.push({ path: 'home' });break;
+                case 'index': this.$router.push({ path: '/index' });break;
+                case 'shop': this.$router.push({ path: '/shop' });break;
+                case 'order': this.$router.push({ path: '/order' });break;
+                case 'home': this.$router.push({ path: '/home' });break;
                 default: break;
             }
         },
