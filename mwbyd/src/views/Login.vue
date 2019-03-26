@@ -64,7 +64,7 @@ export default {
                 if(res){
                     this.$toast(res.tips);
                     if(res.code === 0){
-                        let count = 3;
+                        let count = 2;
                         //顶部提示
                         this.$notify({
                             message: `${count}s后自动跳转到首页`,
@@ -72,7 +72,8 @@ export default {
                             background: '#1989fa'
                         });    
                         localStorage.setItem("avatar",res.avatar);
-                        Cookies.set('user_id',res.user_id);
+                        localStorage.setItem("user_id",res.userId);
+                        Cookies.set('user_id',res.userId);
                         Cookies.set('is_login',true);
                         
                         this.$store.dispatch('setUser',res);
@@ -81,7 +82,7 @@ export default {
                         setTimeout(()=>{
                             //3s后跳转到登录界面
                             this.$router.push(res.return_link)
-                        },3000)
+                        },2000)
                     }
                 }
             })

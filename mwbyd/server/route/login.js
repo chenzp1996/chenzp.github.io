@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const usersModel = require("../models/User").users;
+const Users = require("../models/User").Users;
 
 //点击登录时查找数据库，检查身份
 router.post("/",(req,res)=>{
@@ -14,7 +14,7 @@ router.post("/",(req,res)=>{
         return 
     }
     
-    usersModel.findOne({phone:phone},(error,result)=>{  
+    Users.findOne({phone:phone},(error,result)=>{  
         if(!result){
             data={code:1,tips:'该手机未注册，请检查！'}
             res.status(200),
@@ -33,7 +33,7 @@ router.post("/",(req,res)=>{
                     tips: '登陆成功',
                     avatar: result.avatar,  //返回头像
                     return_link: `/home`,  //返回跳转链接
-                    userId: result.id,
+                    userId: result._id,
                     phone: result.phone
                 }
                 //登录成功将登录状态1保存在cookie里

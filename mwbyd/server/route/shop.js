@@ -1,14 +1,14 @@
 const express = require("express");
 const router = express.Router();
 const url = require('url');
-const shopsModel = require("../models/Shop").shops;
+const Shops = require("../models/Shop").Shops;
 const shopData = require('../../../mwbyd/src/assets/json/shopData.json')
 
 router.get("/",(req,res)=>{
     let data = '',
         shopList = [];
 
-    shopsModel.find({},(err,result)=>{
+        Shops.find({},(err,result)=>{
         result.forEach(v=>{
             let obj = {name,address,frontImg,avgScore,avgPrice} = v;
             shopList.push(obj);           
@@ -21,7 +21,7 @@ router.get("/",(req,res)=>{
    
     // 批量导入数据到数据库
     // shopData.forEach(v=>{
-    //     shopsModel.create({
+    //     Shops.create({
     //         name: v.name,
     //         address: v.address,
     //         frontImg: v.frontImg,
@@ -35,7 +35,7 @@ router.get("/",(req,res)=>{
 router.get('/detail',(req,res)=>{
     let data = '',
         id = req.query.shop_id;
-    shopsModel.findById(id,(err,result)=>{
+    Shops.findById(id,(err,result)=>{
         data={code:0,result};
         res.status(200),
         res.json(data)
@@ -46,7 +46,7 @@ router.get('/detail',(req,res)=>{
 // router.post("/",(req,res)=>{
 //     let data = ''; 
 //     let {name, address, avgScore, frontImg, avgPrice} = req.body;
-//     shopsModel.create({
+//     Shops.create({
 //         name,
 //         address,
 //         frontImg,

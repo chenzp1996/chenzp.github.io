@@ -78,8 +78,8 @@ export default {
                 this.$dialog.confirm({
                     title: '确定退出当前账号吗？',
                     }).then(() => {
-                        console.log('退出账号')
-                        Cookies.set('is_login','')
+                        localStorage.removeItem("user_id");
+                        Cookies.remove('is_login','user_id')
                         this.$router.go(0)
                     }).catch(() => {
                     // on cancel

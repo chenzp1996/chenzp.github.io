@@ -42,4 +42,4 @@ var shopSchema = new mongoose.Schema({
       
 });
 //创建用户模型
-exports.shops = mongoose.model("shops",shopSchema);
+exports.Shops = mongoose.model("Shops",shopSchema);

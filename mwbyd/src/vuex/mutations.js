@@ -6,9 +6,8 @@ export const userStatus = (state, user_id) => {
         state.is_login = true
     }else{
         //登出，清空cookie
-        Cookies.set('user_id',null);
-        Cookies.set('is_login',false);
-        state.user_id = '';
+        Cookies.remove('user_id');
+        Cookies.remove('is_login');
         state.user_id = '';
         state.is_login = false;
     }

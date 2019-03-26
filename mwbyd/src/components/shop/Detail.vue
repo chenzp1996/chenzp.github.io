@@ -18,27 +18,32 @@
                
             </van-row>
         </div>
-        <van-button type="primary" @click="setOrderShow">主要按钮</van-button>
-        <van-popup v-model="show" position="bottom" :overlay="true">
-            内容
-        </van-popup>
         <div class="connect-wrapper">
             <van-cell :title="shopInfo.phone" is-link icon="phone"/>
             <van-cell :title="shopInfo.address" is-link icon="location"/>
             <van-cell :title="`营业时间：${shopInfo.openTime}`" is-link icon="clock"/>
         </div>
+
+        <!-- 预约排队功能按钮 -->
+            <van-row class="btn-wraper">
+                <van-col span="8" offset="4"><van-button type="primary" @click="setFormShow(1)" class="btn btn-paidui" >排队取号</van-button></van-col>
+                <van-col span="8" offset="2"><van-button type="primary" @click="setFormShow(2)" class="btn btn-yuyue">预约选座</van-button></van-col>
+            </van-row>
+        <van-popup v-model="show" position="bottom" :overlay="true">
+            <OrderForm @setFormShow="setFormShow"/>
+        </van-popup>
         
     </div>
 </template>
  
 <script>
 import Vue from 'vue';
-import CommenShopBlock from "../CommenShopBlock.vue" //餐厅模块
+import OrderForm from "../OrderForm.vue" //餐厅模块
 
 export default {
     name: 'Detail',
     components:{
-        
+        OrderForm
     },
     data() {
         return {
@@ -64,11 +69,15 @@ export default {
                  }
              }).then((res) => {
                 this.shopInfo = res.data.result;
-                console.log(this.shopInfo)
+                // console.log(this.shopInfo)
             })
         },
-        setOrderShow(){
-            this.show = !this.show;
+        setFormShow(type){
+            if(type == 1){
+                this.show = !this.show;
+            }else{
+                this.show = !this.show;
+            }
         }
     },
 };
@@ -78,6 +87,8 @@ export default {
 .detail-wrapper{
     .info{
             padding:10px 20px;
+            margin-bottom: 20px;
+            border-bottom: 5px solid rgb(204, 205, 207);
             // background-image: linear-gradient(-90deg, rgba(148, 127, 127, 0.596) 0%, #202935 100%);
         .frontImg{
             border-radius: 10px;
@@ -111,6 +122,10 @@ export default {
     .banner{
         width: 100%;
         height: 200px;
+    }
+    .btn-wraper{
+        margin-top: 10px;
+        padding: 10px 0;
     }
 }
 </style>

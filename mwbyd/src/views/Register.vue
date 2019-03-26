@@ -122,7 +122,7 @@ export default {
                 if(res){
                     this.$toast(res.tips);
                     if(res.code === 0){
-                        let count = 3;
+                        let count = 2;
                         //顶部提示
                         this.$notify({
                             message: `${count}s后自动跳转到登录界面`,
@@ -133,7 +133,7 @@ export default {
                         setTimeout(()=>{
                             //3s后跳转到登录界面
                             this.$router.push('login')
-                        },3000)
+                        },2000)
                     }
                 }
             })

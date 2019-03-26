@@ -1,9 +1,6 @@
 const mongoose = require('mongoose');
 //创建用户表
 var usersSchema = new mongoose.Schema({
-    userId:{
-
-    },
     phone: {//用户账号
         type:String,
         required:true
@@ -28,4 +25,4 @@ var usersSchema = new mongoose.Schema({
     }
 });
 //创建用户模型
-exports.users = mongoose.model("users",usersSchema);
+exports.Users = mongoose.model("Users",usersSchema);

@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const userModel = require("../models/User").users;
+const Users = require("../models/User").Users;
 
 /**
  * @data    //用于返回到前端页面的提示内容，包含code、tips
@@ -20,7 +20,7 @@ router.post("/", (req, res) => {
     
 
     //查找账户
-    userModel.find({
+    Users.find({
         phone: phone
     }, (err, result) => {
         //没找到该手机号则允许注册
@@ -28,7 +28,7 @@ router.post("/", (req, res) => {
             //判断两次密码是否输入一致
             if (password[0] === password[1]) {
                 //后端再次判断密码一致则写入数据库
-                userModel.create({
+                Users.create({
                     phone,
                     password: password[0],
                     gender,

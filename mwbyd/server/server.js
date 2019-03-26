@@ -9,6 +9,7 @@ const login = require("./route/login");
 const register = require("./route/register");
 const userinfo = require("./route/userinfo");
 const shop = require("./route/shop");
+const order = require("./route/order");
 
 app.use(cookieParser())
 app.use(bodyParser.json()); // json文件
@@ -18,6 +19,7 @@ app.use("/login", login);
 app.use("/register", register);
 app.use("/userinfo", userinfo);
 app.use("/shop", shop);
+app.use("/order", order);
 
 //配置服务端口
 const port = process.env.PORT || 3000;

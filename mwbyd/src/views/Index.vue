@@ -191,8 +191,6 @@ export default {
 
     .btn-wraper{
         margin-top: 10px;
-        // border-bottom: 1px solid rgba(7, 193, 96);
-        // box-shadow: 0 1px 3px #1989fa;
         padding: 10px 0;
     }
     .index-adv-wraper{
