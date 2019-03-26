@@ -78,10 +78,5 @@ export default {
     color: #000;
 }
 
-.shaixuan-bar{
-    margin: 10px 0;
-
-}
-
 
 </style>

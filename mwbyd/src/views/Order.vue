@@ -90,11 +90,26 @@ export default {
                 }
             }).then((res) => {
                 this.shopList = res.data.result;
-                console.log(this.shopList)
             })
         },
+        //取消预约
         cancleOrder(user_id,shop_id){
-            console.log(user_id,shop_id)
+            Vue.axios.get('/api/order/delete',{
+                params:{
+                    user_id,
+                    shop_id
+                }
+            }).then((res) => {
+                var res = res.data;
+                if(res){
+                    this.$toast(res.tips);
+                    this.getShopData();
+                }
+            })
+        },
+        //查看商家详情
+        goToShop(shop_id){
+            this.$router.push('/shop/detail?shop_id=' + shop_id)
         },
         goback(){
             this.$router.go(-1);

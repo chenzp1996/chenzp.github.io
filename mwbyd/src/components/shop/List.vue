@@ -68,5 +68,8 @@ export default {
 </script>
  
 <style scoped lang="less">
+.shaixuan-bar{
+    margin-top: 15px;
+}
 
 </style>

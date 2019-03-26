@@ -75,4 +75,25 @@ router.get("/", (req, res) => {
     })
 })
 
+router.get("/delete", (req, res) => {
+    let data = '';
+    let {user_id,shop_id} = req.query;
+    if(!user_id){
+        data={code:1,tips:'您没有权限删除哦！'}
+        location.replace('/login');
+    }
+    Orders.findOneAndRemove({user_id,shop_id},(err, result)=>{
+        if(err){
+            console.log(err);
+        }
+        //订单存在即删除
+        if(result){
+            console.log(result)
+            data={code:0,tips:'删除成功！'}
+            res.status(200),
+            res.json(data)
+        }
+    })
+})
+
 module.exports = router;
