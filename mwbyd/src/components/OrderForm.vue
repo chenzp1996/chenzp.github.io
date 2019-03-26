@@ -131,9 +131,10 @@ export default {
             this.datetimePickerShow = false;
             this.order_info.eatTime = val.toLocaleString( );
         },
-        // setFormShow(){
-        //     this.$emit('update', this.book);
-        // },
+        //子组件修改父组件值时，可以使用emit调用父组件事件
+        setFormShow(){
+            this.$emit('setFormShow', false);
+        },
 
         // 验证输入的订单信息
         validateForm() {
@@ -157,7 +158,8 @@ export default {
                 phone: formData.phone.trim(),
                 eatTime: formData.eatTime,
                 peopleNum: formData.peopleNum,
-                user_id:this.user_id
+                user_id:this.user_id,
+                shop_id:this.$route.query.shop_id
             }
             return validateData;
         },
@@ -172,6 +174,7 @@ export default {
                 var res = res.data;
                 if(res){
                     this.$toast(res.tips);
+                    this.setFormShow();//隐藏form表单
                     // if(res.code === 0){
                     //     setTimeout(()=>{
                     //         //3s后跳转到登录界面

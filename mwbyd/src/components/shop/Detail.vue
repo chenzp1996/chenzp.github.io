@@ -26,8 +26,8 @@
 
         <!-- 预约排队功能按钮 -->
             <van-row class="btn-wraper">
-                <van-col span="8" offset="4"><van-button type="primary" @click="setFormShow(1)" class="btn btn-paidui" >排队取号</van-button></van-col>
-                <van-col span="8" offset="2"><van-button type="primary" @click="setFormShow(2)" class="btn btn-yuyue">预约选座</van-button></van-col>
+                <van-col span="8" offset="4"><van-button type="primary" @click="setFormShow(true)" class="btn btn-paidui" >排队取号</van-button></van-col>
+                <van-col span="8" offset="2"><van-button type="primary" @click="setFormShow(true)" class="btn btn-yuyue">预约选座</van-button></van-col>
             </van-row>
         <van-popup v-model="show" position="bottom" :overlay="true">
             <OrderForm @setFormShow="setFormShow"/>
@@ -72,12 +72,8 @@ export default {
                 // console.log(this.shopInfo)
             })
         },
-        setFormShow(type){
-            if(type == 1){
-                this.show = !this.show;
-            }else{
-                this.show = !this.show;
-            }
+        setFormShow(bool){
+            this.show = bool;
         }
     },
 };

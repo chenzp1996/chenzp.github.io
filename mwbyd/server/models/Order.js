@@ -2,8 +2,12 @@ const mongoose = require('mongoose');
 //创建订单表
 var  OrderSchema = new mongoose.Schema({
     user_id:{
-        type: mongoose.Schema.Types.ObjectId,//指定User的_id
-        ref:"users"
+        type: mongoose.Schema.Types.ObjectId,//关联用户id
+        ref:"Users"
+    },
+    shop_id:{
+        type: mongoose.Schema.Types.ObjectId,//关联店铺id
+        ref:"Shops"
     },
     name:{
         type:String,
@@ -18,8 +22,8 @@ var  OrderSchema = new mongoose.Schema({
         type:Number
     },
     createTime: {//创建时间 
-        type:Date,
-        default:Date.now()
+        type:String,
+        default:(new Date()).toLocaleString()
     },
 });
 //创建用户模型
