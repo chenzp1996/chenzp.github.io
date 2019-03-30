@@ -53,9 +53,13 @@ router.post("/", (req, res) => {
 router.get("/", (req, res) => {
     let data = '';
     let user_id = req.query.user_id;
+    // console.log(user_id)
     if(!user_id){
         data={code:1,tips:'请先登录账号！'}
-        location.replace('/login');
+        res.status(200),
+        res.json(data)
+        return;
+        // localtion.replace('/login');
     }
     Orders.find({user_id}).populate('shop_id').
     exec(function (err, result){

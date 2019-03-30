@@ -12,7 +12,7 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
         '/api': {//虚拟目录
-            target: 'http://localhost:3000',//后台Node项目的请求网址
+            target: 'http://192.168.1.104:3000',//后台Node项目的请求网址
             changeOrigin: true,
             pathRewrite: {
               '^/api': ''//由于上面的虚拟目录实际上是不存在的
@@ -21,7 +21,7 @@ module.exports = {
     },
 
     // Various Dev Server settings
-    host: 'localhost', // can be overwritten by process.env.HOST
+    host: '192.168.1.104', // can be overwritten by process.env.HOST
     port: 8080, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
     autoOpenBrowser: false,
     errorOverlay: true,

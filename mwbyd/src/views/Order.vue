@@ -2,24 +2,15 @@
     <div class="page-tabbar">
         <div class="page-wrap">
             <van-nav-bar
-            title="标题"
+            title="我的订单"
             left-text="返回"
-            right-text="按钮"
+            right-text=""
             left-arrow
             @click-left="goback()"
             @click-right="onClickRight()"
             class="nav-bar"
             />
-            <!-- 搜索 -->
-            <van-search
-                v-model="value"
-                placeholder="请输入搜索关键词"
-                show-action
-                @search="onSearch"
-                class="search"
-                >
-                <div slot="action" @click="onSearch">搜索</div>
-            </van-search>
+            <p class="title"></p>
             <div class="no-order" v-if="!shopList">
                 您还没有预约订座...
                 <router-link class="go-to-shop" to="/shop">立即预约</router-link>
@@ -84,12 +75,20 @@ export default {
             console.log('搜索店铺功能')
         },
         getShopData(){
+            let user_id = this.user_id ||''
             Vue.axios.get('/api/order',{
                 params:{
-                    user_id:this.user_id
+                    user_id:user_id
                 }
             }).then((res) => {
-                this.shopList = res.data.result;
+                var res = res.data;
+                if(res.code == 1){
+                    this.$toast(res.tips);
+                    setTimeout(()=>{
+                        this.$router.push('/login')
+                    },2000)
+                }
+                this.shopList = res.result;
             })
         },
         //取消预约
@@ -127,6 +126,11 @@ export default {
 .page-tabbar{
     overflow: hidden;
 }
+.title{
+    text-align: center;
+    color: #999;
+    font-size:36px;
+}
 .no-order{
     text-align: center;
     color: #999;
@@ -135,6 +139,9 @@ export default {
         display: block;
         color: #3497FB;
     }
+}
+.van-card{
+    margin-top:10px;
 }
 .creat-time{
     text-align: left;

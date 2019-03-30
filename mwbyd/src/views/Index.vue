@@ -8,29 +8,39 @@
             </van-nav-bar>
             <!-- 搜索 -->
             <van-search
-                v-model="value"
+                v-model="searchValue"
                 placeholder="请输入搜索关键词"
                 show-action
                 @search="onSearch"
                 >
-                <div slot="action" @click="onSearch()">搜索</div>
+                <div slot="action" @click="onSearch">搜索</div>
             </van-search>
+            <div class="seach-result" v-if="searchResultShow">
+                <div class="back" @click="setOverflow"></div>
+                <div class="searchList-wrapper">
+                    <van-cell @click="setOverflow" v-for="(item, index) in searchList" :key="index" is-link :value="item.name" :to="{path:'/shop/detail',query:{shop_id:item._id}}"/>
+                </div>
+            </div>
             <!-- 首页轮播图 -->
             <van-swipe :autoplay="3000" :height="150">
                 <van-swipe-item class="swipe-wraper" v-for="(item, index) in bannerScrollList" :key="index" @click="advLink">
-                    <img class="adv-img" :src='item.frontImg' />
-                    <p class="dec">{{item.name}}</p>
+                    <router-link :to="{path:'/shop/detail',query:{shop_id:item._id}}">
+                        <img class="adv-img" :src='item.frontImg' />
+                        <p class="dec">{{item.name}}</p>
+                    </router-link>
                 </van-swipe-item>
             </van-swipe>
             <!-- 预约排队功能按钮 -->
             <van-row class="btn-wraper">
-                <van-col span="8" offset="4"><van-button type="primary" class="btn btn-paidui" >排队取号</van-button></van-col>
-                <van-col span="8" offset="2"><van-button type="primary" class="btn btn-yuyue">预约选座</van-button></van-col>
+                <van-col span="8" offset="4"><van-cell to='/shop'><van-button type="primary" class="btn btn-paidui" >排队取号</van-button></van-cell></van-col>
+                <van-col span="8" offset="2"><van-cell to='/shop'><van-button type="primary" class="btn btn-yuyue">预约选座</van-button></van-cell></van-col>
             </van-row>
             <div class="index-adv-wraper">
                 <p class="title">热门餐厅</p>
                 <van-col class="con-img" span="8" v-for="(item, index) in remenList" :key="index">
-                    <img :src='item.frontImg' v-lazy="item.frontImg"/>                      
+                    <router-link :to="{path:'/shop/detail',query:{shop_id:item._id}}">
+                        <img :src='item.frontImg'/>       
+                    </router-link>              
                 </van-col>
             </div>
             <!-- 首页商家图片展示模块 -->
@@ -41,7 +51,9 @@
                 <div class="index-shop-wraper">
                     <p class="title">精选商家</p>
                     <div v-for="(item, index) in jingxuanList" :key="index">
-                        <img :src="item.frontImg" v-lazy="item.frontImg"/>                      
+                        <router-link :to="{path:'/shop/detail',query:{shop_id:item._id}}">
+                            <img :src="item.frontImg" v-lazy="item.frontImg"/>                      
+                        </router-link>
                     </div>
                 </div>
             </van-list>    
@@ -59,7 +71,9 @@ export default {
         return {
             active: 0,
             left:'惠州',
-            value: '',
+            searchValue: '',
+            searchList: [],
+            searchResultShow: false,
             icon: {
                 normal: '../assets/logo.png',
                 active: '../assets/logo.png'
@@ -132,8 +146,26 @@ export default {
                 }
             })
         },
-        onSearch(){
-            console.log('搜索店铺功能')
+        onSearch(){  
+            this.searchList = [];
+            this.totalShopList.map((item,index)=>{
+                if(item.name.search(this.searchValue) != -1){
+                    this.searchResultShow = true;
+                    document.body.style.overflow = 'hidden'
+                    this.searchList.push(item);
+                    // console.log(this.searchList)
+                }
+            })
+            if(this.searchList.length == 0){
+                this.searchResultShow = false;
+                document.body.style.overflow = ''
+                this.$toast('搜索不到该商家...');
+            }
+        },
+        setOverflow(){
+            this.searchList = [];
+            this.searchResultShow = false;
+            document.body.style.overflow = ''
         },
         advLink(){
             console.log("导航到店家功能")
@@ -236,5 +268,26 @@ export default {
         }
         
     }
+.seach-result{
+    .back{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, .3);
+        // top: -10px;
+        z-index: 998;
+    }
+    .searchList-wrapper{
+        width: 100%;
+        position: absolute;
+        z-index: 999;
+        .van-cell{
+            width: 100%;
+        }
+    }
+    position: relative;
+    width: 100%;
+    z-index: 999;
+}
 
 </style>

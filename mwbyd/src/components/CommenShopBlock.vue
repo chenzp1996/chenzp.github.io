@@ -35,7 +35,7 @@ import { mapState } from 'vuex'
 
 export default {
     name:'CommenShopBlock',
-    // props:['shopList'],
+    props:['type'],
     data() {
         return {
             num: 0, //初始加载商家数量
@@ -63,6 +63,10 @@ export default {
     created() {
         this.getShopData();
     },
+    mounted() {
+        
+    },
+
     methods: {
          getPage(){
             //  :to="`/shop/detail?shop_id=${item._id}`"
@@ -83,8 +87,25 @@ export default {
                 if(this.num<this.totalShopList.length){
                     for (let i = 0; i < 5; i++) {
                         this.num++;
-                        if(this.totalShopList[this.num]){
-                            this.shopList.push(this.totalShopList[this.num])
+                        let shop = this.totalShopList[this.num]
+                        if(shop){
+                            // console.log(shop);
+                            switch(this.type){
+                                case 'all': 
+                                    this.shopList.push(shop);
+                                    break;
+                                case 'star': 
+                                    if(shop.avgScore == 5){
+                                        this.shopList.push(shop);
+                                        break;
+                                    }
+                                break;
+                                case 'price':
+                                    this.shopList.push(shop);
+                                    break;
+                                
+                            }
+                            
                         }
                     }
                 }

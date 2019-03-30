@@ -20,13 +20,12 @@
     </van-row>
 
     <van-cell-group class="user-group">
-      <van-cell icon="records" title="全部订单" is-link />
+      <van-cell icon="records" to="/order" title="全部订单" is-link />
     </van-cell-group>
 
     <van-cell-group>
       <van-cell icon="points" title="我的积分" is-link />
       <van-cell icon="gold-coin-o" title="我的优惠券" is-link />
-      <van-cell icon="gift-o" title="我收到的礼物" is-link />
     </van-cell-group>
 
     <van-row>
