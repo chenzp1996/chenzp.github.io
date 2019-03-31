@@ -18,19 +18,64 @@
                
             </van-row>
         </div>
-        <div class="connect-wrapper">
+
+        <!-- 预约排队功能按钮 -->
+            <van-row class="btn-wraper">
+                <van-col span="8" offset="4"><van-button type="primary" @click="setQueueFormShow(true)" class="btn btn-paidui" >排队取号</van-button></van-col>
+                <van-col span="8" offset="2"><van-button type="primary" @click="setOrderFormShow(true)" class="btn btn-yuyue">预约订座</van-button></van-col>
+            </van-row>
+
+        <div class="box">
+            <p class="title">
+                <van-icon name="underway" color='#FF4444'/>
+                <span>排队取号</span>
+            </p>
+            <van-cell value="内容" icon="shop-o" is-link>
+                <template slot="title">
+                    <span class="custom-text">小桌</span>
+                    <van-tag type="danger">1~2人</van-tag>
+                </template>
+            </van-cell>
+            <van-cell value="内容" icon="shop-o" is-link>
+                <template slot="title">
+                    <span class="custom-text">中桌</span>
+                    <van-tag type="danger">3~4人</van-tag>
+                </template>
+            </van-cell><van-cell value="内容" icon="shop-o" is-link>
+                <template slot="title">
+                    <span class="custom-text">大桌</span>
+                    <van-tag type="danger">5人以上</van-tag>
+                </template>
+            </van-cell>
+        </div>
+        <div class="box">
+            <p class="title">
+                <van-icon name="send-gift" color='#FF4444'/>
+                <span>预约订座</span>
+            </p>
+            <van-cell value="内容" icon="shop-o" is-link>
+                <template slot="title">
+                    <span class="custom-text">已预约：</span>
+                </template>
+            </van-cell>
+        </div>
+
+         <div class="box">
+            <p class="title">
+                <van-icon name="shop-collect" color='#FF4444'/>
+                <span>更多信息</span>
+            </p>
             <van-cell :title="shopInfo.phone" is-link icon="phone"/>
             <van-cell :title="shopInfo.address" is-link icon="location"/>
             <van-cell :title="`营业时间：${shopInfo.openTime}`" is-link icon="clock"/>
         </div>
 
-        <!-- 预约排队功能按钮 -->
-            <van-row class="btn-wraper">
-                <van-col span="8" offset="4"><van-button type="primary" @click="setFormShow(true)" class="btn btn-paidui" >排队取号</van-button></van-col>
-                <van-col span="8" offset="2"><van-button type="primary" @click="setFormShow(true)" class="btn btn-yuyue">预约选座</van-button></van-col>
-            </van-row>
-        <van-popup v-model="show" position="bottom" :overlay="true">
-            <OrderForm @setFormShow="setFormShow"/>
+        <van-popup v-model="OrderFormShow" position="bottom" :overlay="true">
+            <OrderForm @setOrderFormShow="setOrderFormShow"/>
+        </van-popup>
+
+        <van-popup v-model="queueFormShow" position="bottom" :overlay="true">
+            <QueueForm @setQueueFormShow="setQueueFormShow"/>
         </van-popup>
         
     </div>
@@ -38,17 +83,20 @@
  
 <script>
 import Vue from 'vue';
-import OrderForm from "../OrderForm.vue" //餐厅模块
+import OrderForm from "../OrderForm.vue" //预约模块
+import QueueForm from "../QueueForm.vue" //预约模块
 
 export default {
     name: 'Detail',
     components:{
-        OrderForm
+        OrderForm,
+        QueueForm
     },
     data() {
         return {
             shopInfo:{},
-            show:false
+            OrderFormShow:false,    //预约信息填写表单
+            queueFormShow:false     //排队信息填写表单
         };
     },
     props:{
@@ -72,8 +120,11 @@ export default {
                 // console.log(this.shopInfo)
             })
         },
-        setFormShow(bool){
-            this.show = bool;
+        setOrderFormShow(bool){
+            this.OrderFormShow = bool;
+        },
+        setQueueFormShow(bool){
+            this.queueFormShow = bool;
         }
     },
 };
@@ -123,5 +174,22 @@ export default {
         margin-top: 10px;
         padding: 10px 0;
     }
+
+    .box{
+        border-bottom: 2px solid #ccc;
+    }
+    .title{
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        line-height: 20px;
+        padding: 10px 15px;
+        span{
+            margin-left: 10px;
+            color: #000;
+        }
+    }
+    
 }
 </style>

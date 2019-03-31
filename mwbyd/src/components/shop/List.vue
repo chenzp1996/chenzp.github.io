@@ -6,7 +6,6 @@
             placeholder="请输入搜索关键词"
             show-action
             @search="onSearch"
-            @cancel="onCancle"
             class="search"
             >
             <div slot="action" @click="onSearch">搜索</div>
@@ -16,7 +15,6 @@
             <div class="searchList-wrapper">
                 <van-cell @click="setOverflow" v-for="(item, index) in searchList" :key="index" is-link :value="item.name" :to="{path:'/shop/detail',query:{shop_id:item._id}}"/>
             </div>
-            
         </div>
         <van-tabs type="card" class="shaixuan-bar" animated color="RGB(130,191,252)">
             <van-tab v-for="(item, index) in navArr"    :key="index" :title="item.title">
@@ -86,24 +84,22 @@ export default {
             this.shopList.map((item,index)=>{
                 if(item.name.search(this.searchValue) != -1){
                     this.searchResultShow = true;
-                    document.body.style.overflow = 'hidden'
+                    document.body.style.position = 'fixed'
                     this.searchList.push(item);
                     // console.log(this.searchList)
                 }
             })
             if(this.searchList.length == 0){
                 this.searchResultShow = false;
-                document.body.style.overflow = ''
+                document.body.style.position = ''
                 this.$toast('搜索不到该商家...');
             }
         },
-        onCancle(){
-            console.log('取消搜索')
-        },
+
         setOverflow(){
             this.searchList = [];
             this.searchResultShow = false;
-            document.body.style.overflow = ''
+            document.body.style.position = ''
         }
 
     },

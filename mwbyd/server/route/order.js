@@ -9,9 +9,10 @@ const Orders = require("../models/Order").Orders;
  */
 router.post("/", (req, res) => {
     let data = '';  
-    let { name, phone, eatTime, peopleNum, user_id, shop_id } = req.body;
+    let { name, phone, eatTime, peopleNum, user_id, shop_id, type } = req.body;
     
-    if(!user_id ){
+    console.log(user_id)
+    if( !user_id ){
         data={code:1,tips:'请先登录账号！'}
         res.status(200),
         res.json(data)
@@ -40,7 +41,8 @@ router.post("/", (req, res) => {
                 eatTime,
                 peopleNum,
                 user_id,
-                shop_id
+                shop_id,
+                type
             })
             data={code:0,tips:'预约成功！'}
             res.status(200),
@@ -68,7 +70,7 @@ router.get("/", (req, res) => {
         }
         //同一个用户在同一个店不能下两单，
         if(result.length == 0){
-            data={code:1,tips:'您还没有预约过餐厅，快去预约吧！'}
+            data={code:2,tips:'您还没有预约过餐厅，快去预约吧！'}
             res.status(200),
             res.json(data)
         }else{

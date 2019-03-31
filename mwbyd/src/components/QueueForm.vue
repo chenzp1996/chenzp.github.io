@@ -2,13 +2,9 @@
   <div class="container">  
         <p class="title">
             <van-icon name="send-gift" color='#FF4444'/>
-            <span>预约订座</span>
+            <span>排队取号</span>
         </p>
       <van-cell-group> 
-            <van-notice-bar
-                text="请至少提前一天预约订座！                           "
-                left-icon="volume-o"
-            /> 
             <van-field
                 v-model="order_info.name"
                 required
@@ -27,25 +23,6 @@
             <div class="van-cell people-num">到店人数：
                 <van-stepper integer :min="1" :max="20" v-model="order_info.peopleNum" />
             </div>
-            <!-- 预约时间 -->
-            
-            <van-field
-                @focus="datetimePickerShow=true"
-                label="到店时间："
-                v-model="order_info.eatTime"
-            />
-            <van-popup v-model="datetimePickerShow" position="bottom" :overlay="true">
-            <van-datetime-picker
-                title="年/月/日/时/分"
-                @confirm="confirmEatTimer"
-                @cancel="datetimePickerShow=false"
-                type="datetime"
-                :min-date="minDate"
-                :max-date="maxDate"
-                :min-hour="minHour"
-                :max-hour="maxHour"
-            />
-            </van-popup>           
         </van-cell-group>
 
         <div class="btn-wraper">
@@ -70,13 +47,6 @@ export default {
         return { 
             is_login: Cookies.get('is_login') || this.$store.state.is_login ||'',
             user_id: localStorage.getItem('user_id') || '',
-
-            datetimePickerShow: false,  //是否显示时间选择器
-            
-            minHour: 10,    //开始营业时间
-            maxHour: 22,    //关门时间
-            minDate: null,  //可以预约最近的一天
-            maxDate: null,  //最多可以预约到的一天
             
             order_info:{
                 name:'',
@@ -90,21 +60,6 @@ export default {
         
     },
     computed: {
-        year: ()=>{
-            return Number(new Date().getUTCFullYear());
-        },
-        month: ()=>{
-            return Number(new Date().getUTCMonth());  
-        },
-        day: ()=>{
-            return Number(new Date().getUTCDate())
-        },
-        hour: ()=>{
-            return Number(new Date().getHours())
-        },
-        minutes: ()=>{
-            return Number(new Date().getMinutes())
-        },
         isLogin(){
             let user_id = Cookies.get('user_id'),
                 is_login = Cookies.get('is_login');
@@ -119,25 +74,13 @@ export default {
     },
     
     created() {
-        this.getMinDate();
-        this.getMaxDate();
+        // console.log(this.user_id)
     },
     methods: {
-        getMinDate(){
-            this.minDate = new Date(this.year,this.month,this.day+1,10,this.minutes)
-        },
-        getMaxDate(){
-            this.maxDate = new Date(this.year,this.month+1,this.day+2,20,0)
-        },
-        
-        //确定选择时间后
-        confirmEatTimer(val){
-            this.datetimePickerShow = false;
-            this.order_info.eatTime = val.toLocaleString( );
-        },
+
         //子组件修改父组件值时，可以使用emit调用父组件事件
-        setOrderFormShow(){
-            this.$emit('setOrderFormShow', false);
+        setQueueFormShow(){
+            this.$emit('setQueueFormShow', false);
         },
 
         // 验证输入的订单信息
@@ -160,11 +103,10 @@ export default {
             validateData = {
                 name: formData.name.trim(),
                 phone: formData.phone.trim(),
-                eatTime: formData.eatTime,
                 peopleNum: formData.peopleNum,
-                user_id:this.user_id,
-                shop_id:this.$route.query.shop_id,
-                type: 1
+                user_id: this.user_id,
+                shop_id: this.$route.query.shop_id,
+                type: 0
             }
             return validateData;
         },
@@ -179,13 +121,7 @@ export default {
                 var res = res.data;
                 if(res){
                     this.$toast(res.tips);
-                    this.setOrderFormShow();//隐藏form表单
-                    // if(res.code === 0){
-                    //     setTimeout(()=>{
-                    //         //3s后跳转到登录界面
-                    //         this.$router.push('login')
-                    //     },2000)
-                    // }
+                    this.setQueueFormShow();//隐藏form表单
                 }
             })
         },
@@ -244,6 +180,7 @@ export default {
         color: RGB(25,137,250);
     }
 }
+
 .title{
     display: flex;
     align-items: center;

@@ -2,13 +2,13 @@
     <div class="page-tabbar">
         <div class="page-wrap">
             <van-nav-bar
-            title="我的订单"
-            left-text="返回"
-            right-text=""
-            left-arrow
-            @click-left="goback()"
-            @click-right="onClickRight()"
-            class="nav-bar"
+                title="我的订单"
+                left-text="返回"
+                right-text=""
+                left-arrow
+                @click-left="goback()"
+                @click-right="onClickRight()"
+                class="nav-bar"
             />
             <p class="title"></p>
             <div class="no-order" v-if="!shopList">
@@ -17,15 +17,15 @@
             </div>
             <div v-else class="order-wraper">
                 <van-card v-for="(item, index) in shopList" :key="index"
-                    tag="预约"
+                    :tag="item.status == 0 ? '待接单' : item.status == 1 ? '已接单' : '已完成'"
                     :desc="`预约人数:${item.peopleNum}人`"
                     :price="`到店时间:${item.eatTime}`"
                     currency=""
                     :title="item.shop_id.name"
                     :thumb="item.shop_id.frontImg"
-                    
                     >
                 <div slot="footer">
+                    <p v-if="item.rowNumber != 0" class="creat-time">排号：{{item.rowNumber}}</p>
                     <van-button size="small" @click="goToShop(item.shop_id._id)">查询商家</van-button>
                     <van-button size="small" @click="cancleOrder(item.user_id,item.shop_id._id)">取消预定</van-button>
                     <p class="creat-time">订单时间：{{item.createTime}}</p>
@@ -75,18 +75,22 @@ export default {
             console.log('搜索店铺功能')
         },
         getShopData(){
-            let user_id = this.user_id ||''
+            let user_id = this.user_id || '';
+            if(!user_id){
+                this.$toast('请先登录账号！');
+                setTimeout(()=>{
+                        this.$router.push('/login')
+                },2000)
+                return;
+            }
             Vue.axios.get('/api/order',{
                 params:{
                     user_id:user_id
                 }
             }).then((res) => {
                 var res = res.data;
-                if(res.code == 1){
+                if(res.code == 2){
                     this.$toast(res.tips);
-                    setTimeout(()=>{
-                        this.$router.push('/login')
-                    },2000)
                 }
                 this.shopList = res.result;
             })
